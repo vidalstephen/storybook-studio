@@ -1,0 +1,1334 @@
+[
+  {
+    "id": "R-VSN-001",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-VSN-002",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-VSN-003",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-VSN-004",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-VSN-005",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-VSN-006",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-VSN-007",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-VSN-008",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-VSN-009",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-VSN-010",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-VSN-011",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-VSN-012",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-PUB-001",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-PUB-002",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-PUB-003",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-PUB-004",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-PUB-005",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-PUB-006",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-PUB-007",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-PUB-008",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-PUB-009",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-PUB-010",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-WIZ-001",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-WIZ-002",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-WIZ-003",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-WIZ-004",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-WIZ-005",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-WIZ-006",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-WIZ-007",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-WIZ-008",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-WIZ-009",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-WIZ-010",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-WIZ-011",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-WIZ-012",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-WIZ-013",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-WIZ-014",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-WIZ-015",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-WIZ-016",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-WIZ-017",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-IDE-001",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-IDE-002",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-IDE-003",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-IDE-004",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-IDE-005",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-IDE-006",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-IDE-007",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-IDE-008",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-IDE-009",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-IDE-010",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-IDE-011",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-IDE-012",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-IDE-013",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-IDE-014",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-IDE-015",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-IDE-016",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-GEN-001",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-GEN-002",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-GEN-003",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-GEN-004",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-GEN-005",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-GEN-006",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-GEN-007",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-GEN-008",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-GEN-009",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-GEN-010",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-GEN-011",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-GEN-012",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-GEN-013",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-GEN-014",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-CMP-001",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-CMP-002",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-CMP-003",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-CMP-004",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-CMP-005",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-CMP-006",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-CMP-007",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-CMP-008",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-CMP-009",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-CMP-010",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-CMP-011",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-CMP-012",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-CMP-013",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-CMP-014",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-CMP-015",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-CMP-016",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-CMP-017",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-CMP-018",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-CMP-019",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-CMP-020",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-CMP-021",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-CMP-022",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DIG-001",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DIG-002",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DIG-003",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DIG-004",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DIG-005",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DIG-006",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DIG-007",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DIG-008",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DIG-009",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DIG-010",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DIG-011",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DIG-012",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DIG-013",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DIG-014",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DIG-015",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DIG-016",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DIG-017",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DSN-001",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DSN-002",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DSN-003",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DSN-004",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DSN-005",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DSN-006",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DSN-007",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DSN-008",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DSN-009",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DSN-010",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DSN-011",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DSN-012",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DSN-013",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-PRT-001",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-PRT-002",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-PRT-003",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-PRT-004",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-PRT-005",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-PRT-006",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-PRT-007",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-PRT-008",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-PRT-009",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-PRT-010",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-PRT-011",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-PRT-012",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-PRT-013",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-PRT-014",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-PRT-015",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-PRT-016",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-PRT-017",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-PRT-018",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-QAS-001",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-QAS-002",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-QAS-003",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-QAS-004",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-QAS-005",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-QAS-006",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-QAS-007",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-QAS-008",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-QAS-009",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-QAS-010",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-QAS-011",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-QAS-012",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-QAS-013",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-QAS-014",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-QAS-015",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-QAS-016",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-QAS-017",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-UXS-001",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-UXS-002",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-UXS-003",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-UXS-004",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-UXS-005",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-UXS-006",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-UXS-007",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-UXS-008",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-UXS-009",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-UXS-010",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-UXS-011",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-UXS-012",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-UXS-013",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-UXS-014",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-ARC-001",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-ARC-002",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-ARC-003",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-ARC-004",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-ARC-005",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-ARC-006",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-ARC-007",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-ARC-008",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-ARC-009",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-ARC-010",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-ARC-011",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-ARC-012",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-ARC-013",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-ARC-014",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-ARC-015",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-ARC-016",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-ARC-017",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-OPS-001",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-OPS-002",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-OPS-003",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-OPS-004",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-OPS-005",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-OPS-006",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-OPS-007",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-OPS-008",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-OPS-009",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-OPS-010",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-OPS-011",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-OPS-012",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-OPS-013",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-OPS-014",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-ARC-101",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-ARC-102",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-ARC-103",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-ARC-104",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-ARC-105",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-OPS-101",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-OPS-102",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-OPS-103",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-OPS-104",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-UXS-101",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DIG-101",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DIG-102",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-PRT-101",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-UXS-102",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-UXS-103",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-UXS-104",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DIG-103",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-PRT-102",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DSN-101",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-DSN-102",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  },
+  {
+    "id": "R-IDE-101",
+    "status": "planned",
+    "note": "",
+    "updated": "2026-10-15"
+  }
+]

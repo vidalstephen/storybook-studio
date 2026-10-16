@@ -1,0 +1,192 @@
+{
+  "id": "book_dg",
+  "meta": {
+    "title": "David and Goliath",
+    "subtitle": "A Story of Courage and Faith",
+    "author": "Storybook Studio",
+    "audience": {
+      "age_from": 6,
+      "age_to": 10,
+      "reading_pt": "early"
+    },
+    "publication_type": "biblical",
+    "language": "en",
+    "copyright": "Copyright © 2026 Storybook Studio. The retelling text is original. Scripture quotations are from the World English Bible (WEB), which is in the public domain."
+  },
+  "target_print_pages": 16,
+  "budget": {
+    "target_words": 1106,
+    "lower_floor_words": 940,
+    "reserve_words": 31.6,
+    "effective_prose_budget_words": 924,
+    "derived_from": "9 story pages × 16 balanced lines/page × 7.9 words/line − 31.6-word reserve (4 lines × 7.9), at the resolved density band 0.35/0.78 on dsg_dg_v1 (docs/05 §1.6 item 7; docs/16 §1.2.1). 7.9 words/line is MEASURED on the version-controlled probe fixture in the shipped face (197 words / 25 line boxes, pinned Chromium); it is not authored. The effective PROSE budget is 924 = (144 − 26 scripture − 1 heading) × 7.9, because the beats' verse displays occupy lines on the same pages (R-WIZ-017)."
+  },
+  "front_matter": [
+    {
+      "id": "matter_dg_title",
+      "slot": "title",
+      "blocks": [
+        { "id": "blk_dg_title", "role": "heading", "text": "David and Goliath" },
+        { "id": "blk_dg_subtitle", "role": "note", "text": "A Story of Courage and Faith" }
+      ]
+    },
+    {
+      "id": "matter_dg_copyright",
+      "slot": "copyright",
+      "blocks": [
+        { "id": "blk_dg_copyright", "role": "note", "text": "Copyright © 2026 Storybook Studio. The retelling text is original. Scripture quotations are from the World English Bible (WEB), which is in the public domain." }
+      ]
+    },
+    {
+      "id": "matter_dg_dedication",
+      "slot": "dedication",
+      "blocks": [
+        { "id": "blk_dg_dedication", "role": "prose", "text": "For every child who has ever felt too small to be brave." }
+      ]
+    },
+    {
+      "id": "matter_dg_contents",
+      "slot": "contents",
+      "blocks": [
+        { "id": "blk_dg_contents_heading", "role": "heading", "text": "Contents" },
+        { "id": "blk_dg_contents", "role": "note", "text": "1. The Two Armies · 2. The Shepherd Boy · 3. A Boy Speaks Up · 4. The King's Armour · 5. The Smooth Stone · 6. David Steps Forward · 7. The Giant Falls · 8. The Great Shout · 9. Courage Comes from God" }
+      ]
+    }
+  ],
+  "beats": [
+    {
+      "id": "beat_dg_1",
+      "kind": "scene",
+      "summary": "The armies of Israel and Philistia face each other across a valley, and the giant Goliath steps out with his challenge; for forty days no one in Israel is brave enough to answer him.",
+      "blocks": [
+        { "id": "blk_dg_story_title", "role": "heading", "text": "David and Goliath" },
+        { "id": "blk_dg_armies", "role": "prose", "text": "The Philistine army camped on one hill. The army of Israel camped on the hill across the valley. Between the two hills lay a wide, still stretch of green land, and neither army dared to cross it first." },
+        { "id": "blk_dg_goliath_challenge", "role": "prose", "text": "Every morning a champion strode out of the Philistine camp. His name was Goliath. He stood taller than any man in either army, and he wore a helmet of bronze and a heavy coat of mail. His spear was like a weaver's beam. His voice rolled across the valley like thunder. \"Send out one man to fight me,\" he shouted. \"If he wins, we win. If I win, you lose.\"" },
+        { "id": "blk_dg_forty_days", "role": "prose", "text": "For forty days the giant said the same words, morning and evening. The soldiers of Israel heard him and their hearts sank like stones. No one moved. No one spoke. No one walked down into the valley." }
+      ]
+    },
+    {
+      "id": "beat_dg_2",
+      "kind": "scene",
+      "summary": "The story turns to David, the youngest of eight shepherd brothers, whom God chose by looking at the heart; his father sends him to the camp with food for his brothers.",
+      "blocks": [
+        { "id": "blk_dg_david_intro", "role": "prose", "text": "Far away, in the hills near Bethlehem, lived a shepherd boy named David. He was the youngest of eight brothers. God had chosen him once, quietly, when no one was watching, because God looks at the heart and not at how tall a person stands. While his brothers were away at war, David stayed behind to watch the sheep." },
+        { "id": "blk_dg_jesse_sends", "role": "prose", "text": "One morning David's father called to him. \"Take bread and cheese to your brothers in the camp,\" he said. \"See how they are doing, and bring me back word.\"" },
+        { "id": "blk_dg_david_arrives", "role": "prose", "text": "David set out early. He left the sheep with a helper, gathered the food in a basket, and walked all day. He reached the camp just as the two armies were taking their places on the hills." }
+      ]
+    },
+    {
+      "id": "beat_dg_3",
+      "kind": "turn",
+      "summary": "David hears the giant defy the living God and is indignant rather than afraid; his brother scorns him, but David's words reach King Saul and he offers to fight.",
+      "blocks": [
+        { "id": "blk_dg_david_hears", "role": "prose", "text": "Then Goliath came down into the valley again, and this time David heard him. \"Who is this man,\" David asked the soldiers nearby, \"that he dares to shout at the army of the living God?\" The soldiers only shook their heads. Some of them had families back home, and they did not want to die today." },
+        { "id": "blk_dg_brothers_scorn", "role": "prose", "text": "His oldest brother heard him and grew angry. \"Why are you here?\" he snapped. \"Who is minding the sheep?\" But David would not sit down and stay quiet." },
+        { "id": "blk_dg_david_volunteers", "role": "prose", "text": "Word reached King Saul that a boy had spoken up. Saul sent for David. \"You are only a boy,\" the king said. \"The giant has been a soldier since he was young. You cannot fight him.\" David stood up straight. \"God kept me safe from lions and bears while I watched the sheep,\" he said. \"He will keep me safe now.\"" }
+      ]
+    },
+    {
+      "id": "beat_dg_4",
+      "kind": "scene",
+      "summary": "Saul dresses David in the king's armour, but David cannot move in it and takes it off; he chooses instead the staff and sling he knows, and walks down toward the valley.",
+      "blocks": [
+        { "id": "blk_dg_saul_armour", "role": "prose", "text": "Saul shook his head, but he did not send the boy away. \"At least wear my armour,\" the king said. So the servants brought out his heavy helmet and his coat of mail, shining and hard." },
+        { "id": "blk_dg_armour_off", "role": "prose", "text": "They strapped the armour onto David. He tried to walk, and he could hardly lift one foot. The metal felt like a cage. \"I cannot go in these,\" David said. So he took the armour off, piece by piece, and set it on the ground." },
+        { "id": "blk_dg_staff_and_sling", "role": "prose", "text": "Then David picked up what he did know: his shepherd's staff and his sling, the small weapon he used every day in the fields. He walked out of the camp and down the long hill toward the valley. The soldiers watched him go, wondering." }
+      ]
+    },
+    {
+      "id": "beat_dg_5",
+      "kind": "turn",
+      "summary": "Face to face with the giant, David hears Goliath's taunt (retold, not quoted) and does not flinch. The beat — and story page 5, print page 9 — CLOSES on the stone being chosen.",
+      "locks": [
+        { "kind": "content_lock", "target": "blk_dg_stone", "priority": 90, "why": "The closing sentence of print page 9 is load-bearing: it must end the page and the beat." },
+        { "kind": "keep_together", "target": "beat_dg_5", "priority": 80, "why": "Beat 5 must sit whole on the recto print page 9 so the reveal closes the page before the turn." }
+      ],
+      "blocks": [
+        { "id": "blk_dg_giant_nears", "role": "prose", "text": "At the bottom of the hill David stopped. The giant came closer, step by heavy step, with a shield-bearer marching in front of him. The ground seemed to shake beneath his feet. When Goliath saw that his enemy was only a boy, he laughed out loud." },
+        { "id": "blk_dg_goliath_taunt", "role": "prose", "text": "\"Am I a dog,\" Goliath sneered, \"that you come at me with a stick?\" He shouted at David, cursed him by his gods, and swore he would feed him to the birds of the air. But David did not answer with angry words." },
+        { "id": "blk_dg_stone", "role": "prose", "text": "He did not turn back. Beside his feet a little stream ran through the valley, cool and clear, washing over a hundred smooth stones. David knelt down and looked at them. The young shepherd reached into his bag and chose a single smooth stone." }
+      ]
+    },
+    {
+      "id": "beat_dg_6",
+      "kind": "turn",
+      "summary": "The beat — and print page 10, reached only by the page turn — OPENS with David stepping forward, then sets David's answer to Goliath as the exact words of Scripture (1 Samuel 17:45-47), not as invented dialogue.",
+      "locks": [
+        { "kind": "page_break_lock", "target": "blk_dg_forward", "page": 10, "priority": 100, "why": "Essential break before the reveal: it must begin the page after the turn (docs/05 §2.5)." },
+        { "kind": "print_page_lock", "target": "blk_dg_forward", "page": 10, "priority": 100, "why": "Freeze blk_dg_forward onto print page 10 — the even verso reached only by a real page turn (docs/16 §2 A-07)." },
+        { "kind": "content_lock", "target": "blk_dg_forward", "priority": 90, "why": "The opening sentence of print page 10 is load-bearing." }
+      ],
+      "blocks": [
+        { "id": "blk_dg_forward", "role": "prose", "text": "With courage in his heart, David stepped forward. He wore no armour and carried no sword, but he was not alone." },
+        { "id": "blk_dg_run_to_meet", "role": "prose", "text": "Goliath roared and rushed down the hill at him, and the whole valley seemed to go quiet. David ran out to meet the giant, his sling in his hand." },
+        { "id": "blk_dg_verse", "role": "scripture", "text": "Then David said to the Philistine, “You come to me with a sword, with a spear, and with a javelin; but I come to you in the name of Yahweh of Armies, the God of the armies of Israel, whom you have defied. Today, Yahweh will deliver you into my hand. I will strike you, and take your head from off you. I will give the dead bodies of the army of the Philistines today to the birds of the sky, and to the wild animals of the earth; that all the earth may know that there is a God in Israel, and that all this assembly may know that Yahweh doesn’t save with sword and spear; for the battle is Yahweh’s, and he will give you into our hand.”", "scripture_ref": { "book": "1 Samuel", "chapter": 17, "verse_from": 45, "verse_to": 47, "translation": "WEB" } }
+      ]
+    },
+    {
+      "id": "beat_dg_7",
+      "kind": "turn",
+      "summary": "The climax: David slings the stone, it strikes the giant, and Goliath falls — with no sword in the boy's hand.",
+      "blocks": [
+        { "id": "blk_dg_armies_watch", "role": "prose", "text": "High on both hills the two armies held their breath and watched the valley." },
+        { "id": "blk_dg_sling_swing", "role": "prose", "text": "David set the stone in the leather of his sling. He swung it once, twice, three times, faster and faster. Then he let it fly." },
+        { "id": "blk_dg_giant_falls", "role": "prose", "text": "The stone flew straight and true. Goliath stopped. He swayed, then he fell, and his great body lay still on the ground. The boy had brought down the giant, and there was no sword in David's hand." }
+      ]
+    },
+    {
+      "id": "beat_dg_8",
+      "kind": "scene",
+      "summary": "Israel shouts and the Philistines flee; the contrast between the giant's sword and the boy's stone is left for the reader to weigh, and the victory verses (1 Samuel 17:48-50) are shown verbatim.",
+      "blocks": [
+        { "id": "blk_dg_shout", "role": "prose", "text": "A great shout went up from the army of Israel. The soldiers who had hidden in fear came pouring down from the hills into the valley." },
+        { "id": "blk_dg_philistines_flee", "role": "prose", "text": "When the Philistines saw that their champion had fallen, their courage broke. They turned and ran, and the army of Israel chased them far away, all the way back to their own cities." },
+        { "id": "blk_dg_the_story_spreads", "role": "prose", "text": "That evening the camp buzzed with the story. The strongest man had come out with a sword, a spear, and a shield. The shepherd boy had come with a sling and a single stone." },
+        { "id": "blk_dg_verse2", "role": "scripture", "text": "When the Philistine arose, and walked and came near to meet David, David hurried, and ran toward the army to meet the Philistine. David put his hand in his bag, took a stone, and slung it, and struck the Philistine in his forehead. The stone sank into his forehead, and he fell on his face to the earth. So David prevailed over the Philistine with a sling and with a stone, and struck the Philistine, and killed him; but there was no sword in the hand of David.", "scripture_ref": { "book": "1 Samuel", "chapter": 17, "verse_from": 48, "verse_to": 50, "translation": "WEB" } }
+      ]
+    },
+    {
+      "id": "beat_dg_9",
+      "kind": "reflection",
+      "summary": "The closing reflection: David was not the strongest, but he trusted God, and that trust made him brave. The lesson is stated once and not repeated.",
+      "blocks": [
+        { "id": "blk_dg_quiet_camp", "role": "prose", "text": "That night the camp grew quiet again. David put his sling away and thought about his sheep waiting on the hills. The giant was gone, and the fear was gone with him." },
+        { "id": "blk_dg_not_strongest", "role": "prose", "text": "David was not the strongest man in the valley that day. He was not the tallest or the oldest. But he trusted God, and that trust made him brave when everyone else was afraid." },
+        { "id": "blk_dg_lesson", "role": "prose", "text": "Courage does not come from being big. Courage comes from trusting the God who is bigger than any giant." }
+      ]
+    }
+  ],
+  "back_matter": [
+    {
+      "id": "matter_dg_memory_verse",
+      "slot": "memory_verse",
+      "blocks": [
+        { "id": "blk_dg_memory_heading", "role": "heading", "text": "A Verse to Remember" },
+        { "id": "blk_dg_memory_verse", "role": "scripture", "text": "Then David said to the Philistine, “You come to me with a sword, with a spear, and with a javelin; but I come to you in the name of Yahweh of Armies, the God of the armies of Israel, whom you have defied.”", "scripture_ref": { "book": "1 Samuel", "chapter": 17, "verse_from": 45, "translation": "WEB" } }
+      ]
+    },
+    {
+      "id": "matter_dg_discussion",
+      "slot": "discussion",
+      "blocks": [
+        { "id": "blk_dg_discussion_heading", "role": "heading", "text": "Talk About It" },
+        { "id": "blk_dg_discussion_q1", "role": "question", "text": "Why do you think David was the only one brave enough to face Goliath?" },
+        { "id": "blk_dg_discussion_q2", "role": "question", "text": "David refused to wear the king's armour. What does that tell us about the help God gives?" },
+        { "id": "blk_dg_discussion_q3", "role": "question", "text": "What feels like a giant to you, and whom can you trust to help you face it?" }
+      ]
+    },
+    {
+      "id": "matter_dg_about",
+      "slot": "about",
+      "blocks": [
+        { "id": "blk_dg_about", "role": "note", "text": "This book retells 1 Samuel 16-17, the account of David and Goliath, for readers aged six to ten. The narration, and the words the characters speak in the story, are a paraphrase written for young readers. Passages shown in quotation marks and marked as Scripture are quoted exactly from the World English Bible (WEB), a public-domain translation. Full provenance is recorded in content/SOURCES.md." },
+        { "id": "blk_dg_disclaimer", "role": "note", "text": "Some speech in this retelling is imagined for storytelling — for example, what Goliath shouts and what David says to his brother. It is not presented as the exact words of the Bible." }
+      ]
+    }
+  ],
+  "scripture": [
+    { "book": "1 Samuel", "chapter": 16, "verse_from": 7, "verse_to": 13, "translation": "WEB" },
+    { "book": "1 Samuel", "chapter": 17, "verse_from": 45, "verse_to": 47, "translation": "WEB" },
+    { "book": "1 Samuel", "chapter": 17, "verse_from": 48, "verse_to": 50, "translation": "WEB" }
+  ]
+}

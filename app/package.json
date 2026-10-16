@@ -1,0 +1,26 @@
+{
+  "name": "storybook-studio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Storybook Studio — text-only storybook composition and publishing. Implements docs/ in this repo.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "check:tokens": "tsx src/check-tokens.ts",
+    "measure": "tsx src/measure.ts",
+    "paginate": "tsx src/paginate.ts",
+    "build:book": "tsx src/build-book.ts",
+    "build:all": "tsx src/build-book.ts --all"
+  },
+  "dependencies": {
+    "pdf-lib": "^1.17.1",
+    "playwright": "^1.64.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2"
+  }
+}

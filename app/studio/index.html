@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The favicon is an inline SVG: no network at any point, and it survives being served from anywhere. -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23F6EDDA'/%3E%3Cpath d='M5 7h10v18H8a3 3 0 0 1-3-3z' fill='%239C5A2E'/%3E%3Cpath d='M27 7H17v18h7a3 3 0 0 0 3-3z' fill='%238a6f47'/%3E%3Cpath d='M16 7v18' stroke='%233A2E1F' stroke-width='1'/%3E%3C/svg%3E">
+<title>Storybook Studio — request studio</title>
+<style>
+  :root {
+    --paper: #F6EDDA; --ink: #3A2E1F; --soft: #6f6453; --rule: #8a6f47; --accent: #9C5A2E;
+    --chrome: #e0d6c4; --bg: #171512; --panel: #201d19; --line: #3a352e;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: #E8E1D4;
+    font: 15px/1.5 ui-serif, Georgia, "Times New Roman", serif; }
+  header { padding: 14px 18px; border-bottom: 1px solid var(--line); display: flex; gap: 14px; align-items: baseline; flex-wrap: wrap; }
+  header h1 { font-size: 17px; margin: 0; letter-spacing: .04em; }
+  header .meta { font: 12px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; color: #9c948a; }
+  main { display: grid; grid-template-columns: minmax(320px, 1fr); gap: 18px; padding: 18px; align-items: start; max-width: 1100px; margin: 0 auto; }
+  section { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 14px 16px; margin-bottom: 18px; }
+  section.primary { border-color: #4a3a2a; background: #241f19; }
+  h2 { font-size: 14px; text-transform: uppercase; letter-spacing: .12em; color: var(--accent); margin: 0 0 10px; }
+  h3 { font-size: 13px; margin: 14px 0 6px; color: #cfc6b8; }
+  label { display: block; margin: 8px 0 2px; font-size: 12px; letter-spacing: .04em; color: #b9b0a4; }
+  input, select, textarea { width: 100%; background: #191713; color: #EDE6DA; border: 1px solid var(--line);
+    border-radius: 4px; padding: 7px 8px; font: 14px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; }
+  textarea { min-height: 130px; resize: vertical; }
+  input.big { font-size: 16px; padding: 10px; }
+  .row { display: flex; gap: 10px; flex-wrap: wrap; } .row > * { flex: 1 1 220px; min-width: 0; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+  .chip { border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px; font: 12px/1.6 ui-monospace, monospace; color: #cfc6b8; background: #191713; }
+  .chip[aria-pressed="true"] { border-color: var(--accent); color: #fff; background: #2a2019; }
+  button { font: 14px/1.4 ui-sans-serif, system-ui, sans-serif; background: #2b2620; color: #EDE6DA;
+    border: 1px solid var(--line); border-radius: 5px; padding: 8px 12px; cursor: pointer; }
+  button:hover:not([disabled]) { border-color: var(--accent); }
+  button[disabled] { opacity: .45; cursor: default; }
+  button.primary { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; font-size: 15px; padding: 11px 18px; }
+  .actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; align-items: center; }
+  .note { font-size: 12px; color: #a89f93; margin: 8px 0 0; }
+  .badge { display: inline-block; font: 11px/1.7 ui-monospace, monospace; border-radius: 3px; padding: 0 6px; border: 1px solid var(--line); }
+  .badge.model { border-color: #4f7a4f; color: #9ed39e; }
+  .badge.structure { border-color: #7a6a3f; color: #d8c98c; }
+  .badge.ok { border-color: #4f7a4f; color: #9ed39e; } .badge.bad { border-color: #7a3f3f; color: #e0a0a0; }
+  .badge.waiting { color: #8d857a; } .badge.running { border-color: #7a6a3f; color: #d8c98c; }
+  ul.beats { margin: 6px 0 0; padding-left: 18px; } ul.beats li { margin: 2px 0; }
+  pre.log { background: #141210; border: 1px solid var(--line); border-radius: 4px; padding: 8px;
+    max-height: 320px; overflow: auto; font: 12px/1.45 ui-monospace, monospace; color: #b8d0b8; white-space: pre-wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+  th { color: #b9b0a4; font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: .08em; }
+  a { color: #E8C79B; }
+  .fail { color: #e0a0a0; } .pass { color: #9ed39e; }
+  .lede { margin: 0 0 2px; max-width: 74ch; color: #cfc6b8; font-size: 15px; }
+  .local-only { display: none; }
+  body[data-local="1"] .local-only { display: inline; }
+  select { text-overflow: ellipsis; }
+  .log-label { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .1em; color: #b9b0a4; margin: 10px 0 4px; }
+  ol.steps { list-style: none; margin: 14px 0 0; padding: 0; }
+  ol.steps li { display: flex; gap: 10px; align-items: baseline; padding: 6px 0; border-bottom: 1px solid var(--line); }
+  ol.steps li:last-child { border-bottom: 0; }
+  ol.steps .what { min-width: 11rem; }
+  ol.steps .detail { font: 12px/1.45 ui-monospace, monospace; color: #a89f93; overflow-wrap: anywhere; }
+  details { border: 1px solid var(--line); border-radius: 6px; margin-bottom: 18px; background: #1c1915; }
+  details > summary { cursor: pointer; padding: 12px 16px; font-size: 13px; letter-spacing: .04em; color: #cfc6b8; }
+  details[open] > summary { border-bottom: 1px solid var(--line); }
+  details > .body { padding: 4px 16px 16px; }
+  .two { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; align-items: start; }
+  .two section { margin-bottom: 0; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Storybook Studio</h1>
+  <span class="meta" id="design">design —</span>
+  <span class="meta" id="llm">model —</span>
+  <span class="meta local-only" id="where"></span>
+</header>
+
+<main>
+  <p class="lede">Say what the book should be about and press one button. The studio asks the model for a
+  concept, drafts the manuscript, and builds the pages you would actually print — showing each step as it
+  goes, and stopping if the gate refuses rather than handing you a book nobody checked.</p>
+
+  <section class="primary">
+    <h2>Make a book</h2>
+    <label for="passage">What is it about?</label>
+    <input class="big" id="passage" placeholder="e.g. the good samaritan — or: a story about a lost sheep">
+    <label for="note">Anything to honour? <span class="note" style="display:inline">(optional)</span></label>
+    <input id="note" placeholder="e.g. keep the violence off the page; a girl as the main character">
+    <div class="row" style="margin-top:10px">
+      <div>
+        <label for="preset">Length</label>
+        <select id="preset"></select>
+      </div>
+      <div>
+        <label for="model">Model</label>
+        <select id="model"></select>
+      </div>
+    </div>
+    <p class="note" id="model-note">—</p>
+    <div class="actions">
+      <button class="primary" id="go-make">Make the book</button>
+      <span class="note" id="make-hint">about two minutes: a concept, a manuscript, then the printed pages</span>
+    </div>
+    <ol class="steps" id="steps"></ol>
+    <div id="make-result"></div>
+    <p class="note">Nothing is written and nothing is built unless the gate passes — the model proposes,
+    and the gate decides. If no model answers, the studio says so instead of inventing prose.</p>
+  </section>
+
+  <section>
+    <h2>Requests on disk</h2>
+    <table>
+      <thead><tr><th>id</th><th>title</th><th>pages</th><th>beats</th><th>gate</th><th>built</th></tr></thead>
+      <tbody id="books"></tbody>
+    </table>
+    <p class="note">The gate is a shape and configuration check — ids, roles, matter slots, the scripture
+    references, the age/length fit. It is not an editorial review: prose quality and scripture fidelity are
+    the layers of <code>docs/02</code> W4/W5 and are not here.</p>
+    <div class="actions"><button id="go-reload">Reload</button></div>
+  </section>
+
+  <details id="advanced">
+    <summary>Fine-tune it, or do it step by step</summary>
+    <div class="body">
+      <p class="note">The button above runs these three actions in order. Here they are one at a time, with
+      every field of the request — for a different length, a different audience, or a manuscript written
+      somewhere else.</p>
+
+      <div class="two">
+        <section>
+          <h2>1 · The request</h2>
+          <div class="row">
+            <div><label for="pages">Printed pages</label><input id="pages" type="number" min="8" step="4" value="16"></div>
+            <div><label for="beats">Beats</label><input id="beats" type="number" min="5" max="14" value="9"></div>
+          </div>
+          <div class="row">
+            <div><label for="age_from">Age from</label><input id="age_from" type="number" min="2" max="16" value="4"></div>
+            <div><label for="age_to">Age to</label><input id="age_to" type="number" min="3" max="18" value="8"></div>
+          </div>
+          <div class="row">
+            <div><label for="reading_pt">Reading proficiency</label><input id="reading_pt" value="early"></div>
+            <div><label for="language">Language (BCP-47)</label><input id="language" value="en"></div>
+            <div><label for="publication_type">Publication type</label><input id="publication_type" value="biblical"></div>
+          </div>
+          <div class="row">
+            <div><label for="title">Title</label><input id="title" placeholder="(the concept fills this)"></div>
+            <div><label for="subtitle">Subtitle</label><input id="subtitle"></div>
+          </div>
+          <label for="author">Author</label><input id="author" value="Storybook Studio">
+
+          <h3>Front matter, in order</h3>
+          <div class="chips" id="front"></div>
+          <h3>Back matter, in order</h3>
+          <div class="chips" id="back"></div>
+          <p class="note">Click a section to include it, click it again to leave it out. The typesetter may
+          pack them onto shared pages, and it may drop the contents page with a recorded reason — either way
+          the book says what it did.</p>
+
+          <div class="actions">
+            <button id="go-suggest">Generate suggestion</button>
+            <button id="go-draft">Draft the manuscript</button>
+            <button id="go-write">Write content/&lt;id&gt;.json</button>
+          </div>
+          <p class="note" id="step1-note">Nothing is written until you say so. A suggestion is a proposal:
+          accepting it is a separate action, and no AI layer mutates state (D-11).</p>
+        </section>
+
+        <section>
+          <h2>2 · The suggestion</h2>
+          <div id="suggestion"><p class="note">No suggestion yet. Press <strong>Generate suggestion</strong>.
+          If a model is reachable it drafts the concept; if none answers, the studio answers with a structure
+          drawn from the passage index instead, and says which one you are looking at.</p></div>
+        </section>
+
+        <section>
+          <h2>3 · The manuscript</h2>
+          <div id="draft-result"><p class="note">A book is a <code>Book</code>: beats of prose with locks.
+          Either let the model draft it, or paste an existing manuscript — the build itself never needs a
+          model (R-WIZ-007).</p></div>
+          <textarea id="manuscript" spellcheck="false" placeholder='{ "id": "book_my_title", "meta": { "title": "…" }, "beats": [ … ] }'></textarea>
+          <div class="actions">
+            <button id="go-gate">Check this manuscript against the gate</button>
+          </div>
+        </section>
+
+        <section>
+          <h2>4 · Build</h2>
+          <div class="row">
+            <div><label for="book_id">Request</label><select id="book_id"></select></div>
+            <div><label for="out">Writes</label><input id="out" value="build/studio/&lt;id&gt;.html" disabled></div>
+          </div>
+          <div class="actions"><button class="primary" id="go-build">Build the book</button></div>
+          <p class="note">A build is the real typesetter — the solver measures every block in pinned
+          Chromium, then the emitter writes one self-contained file. Expect a minute. A built book can be
+          opened and shared on its own.</p>
+          <span class="log-label">Build log</span>
+          <pre class="log" id="build-log">nothing has been built in this session yet</pre>
+          <div id="build-result"></div>
+        </section>
+
+        <section>
+          <h2>5 · The model</h2>
+          <p class="note" id="model-detail">—</p>
+          <div class="row">
+            <div><label for="model2">Provider</label><select id="model2"></select></div>
+            <div><label for="model3">Model</label><select id="model3"></select></div>
+          </div>
+          <div class="actions"><button id="go-model">Use this model</button></div>
+          <p class="note">These are the models Hermes offers on this machine. The studio reads the choice and
+          the key from Hermes, uses the key for one request, and never writes it anywhere or returns it to a
+          page. A provider Hermes signs in to with OAuth — or one whose API is not OpenAI-compatible — is
+          listed but marked <em>Hermes only</em>, because the studio cannot hold those credentials.</p>
+        </section>
+      </div>
+    </div>
+  </details>
+</main>
+
+<script>
+const $ = (id) => document.getElementById(id);
+let STATE = null, STEP2 = null, LAST_BOOK = null, picked = null, PROVIDERS = [];
+
+async function api(path, body) {
+  const r = await fetch(path, {
+    method: body === undefined ? "GET" : "POST",
+    headers: { "Content-Type": "application/json" },
+    body: body === undefined ? undefined : JSON.stringify(body),
+  });
+  const text = await r.text();
+  let json; try { json = JSON.parse(text); } catch { json = { raw: text }; }
+  return { status: r.status, json };
+}
+
+function el(tag, attrs = {}, ...kids) {
+  const n = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === "class") n.className = v; else if (k === "html") n.innerHTML = v; else n.setAttribute(k, v);
+  }
+  for (const kid of kids) n.append(kid);
+  return n;
+}
+function chipList(host, slots, chosen) {
+  host.textContent = "";
+  for (const s of slots) {
+    const b = el("button", { class: "chip", type: "button", "aria-pressed": chosen.includes(s) ? "true" : "false" }, s);
+    b.onclick = () => {
+      const on = b.getAttribute("aria-pressed") === "true";
+      b.setAttribute("aria-pressed", on ? "false" : "true");
+    };
+    host.append(b);
+  }
+}
+const chosenSlots = (host) => [...host.querySelectorAll('.chip[aria-pressed="true"]')].map((c) => c.textContent);
+
+function config() {
+  return {
+    id: $("title").value.trim().toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 40) || "book",
+    title: $("title").value.trim(), subtitle: $("subtitle").value.trim(),
+    author: $("author").value.trim(), language: $("language").value.trim(),
+    publication_type: $("publication_type").value.trim(),
+    pages: Number($("pages").value), beats: Number($("beats").value),
+    age_from: Number($("age_from").value), age_to: Number($("age_to").value),
+    reading_pt: $("reading_pt").value.trim(),
+    front: chosenSlots($("front")), back: chosenSlots($("back")),
+  };
+}
+const brief = () => ({ passage: $("passage").value.trim(), note: $("note").value.trim() });
+
+/* ------------------------------------------------------------------------------- the live steps */
+
+const STEP_LABEL = { waiting: "waiting", running: "working…", done: "done", failed: "stopped" };
+
+function renderSteps(steps, host) {
+  host.textContent = "";
+  (steps ?? []).forEach((s, i) => {
+    const li = el("li");
+    li.append(el("span", { class: "what" }, `${i + 1}. ${s.name}`));
+    li.append(el("span", { class: `badge ${s.state === "done" ? "ok" : s.state === "failed" ? "bad" : s.state}` }, STEP_LABEL[s.state] ?? s.state));
+    li.append(el("span", { class: "detail" }, s.detail ?? ""));
+    host.append(li);
+  });
+}
+
+/** Watch a job to the end, reporting each poll so a panel can render as it goes. */
+async function watch(jobId, onTick) {
+  for (let i = 0; i < 400; i++) {
+    const { json } = await api(`/api/job/${jobId}`);
+    onTick(json);
+    if (json.state !== "running") return json;
+    await new Promise((r) => setTimeout(r, 1200));
+  }
+  return null;
+}
+
+/* --------------------------------------------------------------------------- one button, the lot */
+
+$("go-make").onclick = async () => {
+  const b = brief();
+  if (!b.passage && !b.note) { $("passage").focus(); return; }
+  const btn = $("go-make");
+  btn.disabled = true; btn.textContent = "Making the book…";
+  $("make-result").textContent = "";
+  $("make-hint").textContent = "leaving this page open is safe: the steps below report themselves";
+  try {
+    const cfg = config();
+    const { status, json } = await api("/api/make", {
+      brief: b, config: cfg, id: cfg.id,
+      front: chosenSlots($("front")), back: chosenSlots($("back")),
+      provider: picked?.provider, model: picked?.model,
+    });
+    if (!json.job) {
+      renderSteps([{ name: json.error ?? `HTTP ${status}`, state: "failed" }], $("steps"));
+      return;
+    }
+    const done = await watch(json.job, (j) => {
+      renderSteps(j.steps, $("steps"));
+      if (j.log?.length) $("build-log").textContent = j.log.join("\n");
+    });
+    const host = $("make-result");
+    host.textContent = "";
+    if (done?.result?.html) {
+      // The studio serves a built book at /books/<request>.html, not at its path under build/ — the
+      // link has to be the route, or it 404s the moment somebody clicks it. The key comes from the
+      // job; the artifact's own name is only a fallback, so a missing field can never yield a dead link.
+      const key = done.book || String(done.result.html).split("/").pop().replace(/\.html$/, "");
+      const route = `/books/${key}.html`;
+      host.append(el("p", {}, el("span", { class: "badge ok" }, "built"),
+        " ", el("a", { href: route, target: "_blank" }, `open ${route}`),
+        " ", el("span", { class: "note" }, `${done.result.pages ?? "?"} pages · ${done.result.disclosures ?? 0} major disclosures`)));
+    } else {
+      const why = (done?.steps ?? []).filter((s) => s.state === "failed").map((s) => s.detail || s.name);
+      host.append(el("p", {}, el("span", { class: "badge bad" }, "stopped"),
+        " ", el("span", { class: "note" }, why[0] ?? "no artifact was written — the log below says why")));
+    }
+    await loadState();
+  } finally {
+    btn.disabled = false; btn.textContent = "Make the book";
+    $("make-hint").textContent = "about two minutes: a concept, a manuscript, then the printed pages";
+  }
+};
+
+/* ------------------------------------------------------------------ the three actions, one by one */
+
+function renderSuggestion(s) {
+  const host = $("suggestion"); host.textContent = "";
+  host.append(el("p", {}, el("span", { class: `badge ${s.source}` }, s.source === "model" ? "drafted by a model" : "structure only"),
+    " ", el("span", { class: "note" }, ` from ${s.provenance}`)));
+  const c = s.concept;
+  host.append(el("h3", {}, c.title + (c.subtitle ? ` — ${c.subtitle}` : "")));
+  host.append(el("p", {}, c.premise));
+  if (c.passage) host.append(el("p", { class: "note" }, `${c.passage.book} ${c.passage.chapter}:${c.passage.verse_from}–${c.passage.verse_to} (${c.passage.translation})`));
+  const ul = el("ul", { class: "beats" });
+  for (const b of c.beats || []) ul.append(el("li", {}, el("span", { class: "badge" }, b.kind), " ", b.summary));
+  host.append(el("h3", {}, `Beats (${(c.beats || []).length})`), ul);
+  if (c.memory_verse) host.append(el("p", {}, el("strong", {}, "Memory verse: "), c.memory_verse));
+  if (c.discussion?.length) {
+    const d = el("ul", { class: "beats" });
+    for (const q of c.discussion) d.append(el("li", {}, q));
+    host.append(el("h3", {}, "Discussion"), d);
+  }
+  for (const n of s.notes || []) host.append(el("p", { class: "note" }, n));
+  const actions = el("div", { class: "actions" });
+  const accept = el("button", { class: "primary" }, "Accept into the request");
+  accept.onclick = () => {
+    $("title").value = c.title; $("subtitle").value = c.subtitle || "";
+    if (c.passage) $("passage").value = `${c.passage.book} ${c.passage.chapter}:${c.passage.verse_from}-${c.passage.verse_to}`;
+    STEP2 = c;
+    $("step1-note").textContent = "Accepted: the request now carries this concept. Drafting the manuscript is the next step.";
+  };
+  actions.append(accept);
+  host.append(actions);
+}
+
+function renderGate(g, where) {
+  const host = $(where); host.textContent = "";
+  host.append(el("p", {}, el("span", { class: `badge ${g.ok ? "ok" : "bad"}` }, g.ok ? "gate: pass" : `gate: ${g.failures.length} failure(s)`),
+    " ", el("span", { class: "note" }, g.ok ? "the request is buildable" : "nothing was written")));
+  if (g.failures?.length) {
+    const ul = el("ul", { class: "beats fail" });
+    for (const f of g.failures.slice(0, 12)) ul.append(el("li", {}, f));
+    host.append(ul);
+  }
+  for (const n of g.notes || []) host.append(el("p", { class: "note" }, n));
+}
+
+$("go-suggest").onclick = async () => {
+  const btn = $("go-suggest");
+  btn.disabled = true; btn.textContent = "Asking…";
+  try {
+    const { json } = await api("/api/suggest", { config: config(), brief: brief(), provider: picked?.provider, model: picked?.model });
+    renderSuggestion(json);
+  } finally { btn.disabled = false; btn.textContent = "Generate suggestion"; }
+};
+
+$("go-draft").onclick = async () => {
+  const btn = $("go-draft");
+  btn.disabled = true; btn.textContent = "Drafting…";
+  try {
+    const { status, json } = await api("/api/draft", {
+      config: config(), concept: STEP2 ?? {}, front: chosenSlots($("front")), back: chosenSlots($("back")),
+      provider: picked?.provider, model: picked?.model,
+    });
+    renderGate(json.gate ?? { ok: false, failures: [json.error ?? `HTTP ${status}`] }, "draft-result");
+    if (json.book) {
+      $("manuscript").value = JSON.stringify(json.book, null, 2);
+      LAST_BOOK = json.book;
+      $("draft-result").append(el("p", { class: "note" }, "The draft is in the box below. Edit it if you like, then write it."));
+    } else if (json.hint) {
+      $("draft-result").append(el("p", { class: "note" }, json.hint));
+    }
+    for (const n of json.notes || []) $("draft-result").append(el("p", { class: "note" }, n));
+  } finally { btn.disabled = false; btn.textContent = "Draft the manuscript"; }
+};
+
+async function writeIt(book, overwrite) {
+  const { status, json } = await api("/api/draft", { manuscript: book, key: config().id, write: true, overwrite });
+  renderGate(json.gate ?? { ok: false, failures: [json.conflict ?? `HTTP ${status}`] }, "draft-result");
+  if (json.written) {
+    $("draft-result").append(el("p", { class: "note" }, `written: ${json.written}`));
+    await loadState();
+    if (json.key) $("book_id").value = json.key;
+  }
+  return json;
+}
+
+$("go-write").onclick = async () => {
+  let book = LAST_BOOK;
+  const text = $("manuscript").value.trim();
+  if (text) { try { book = JSON.parse(text); } catch (e) { renderGate({ ok: false, failures: [`the box is not valid JSON: ${e.message}`] }, "draft-result"); return; } }
+  if (!book) { renderGate({ ok: false, failures: ["nothing to write: draft a manuscript or paste one"] }, "draft-result"); return; }
+  LAST_BOOK = book;
+  const first = await api("/api/draft", { manuscript: book, write: false });
+  if (first.json.conflict || !first.json.gate?.ok) {
+    renderGate(first.json.gate, "draft-result");
+    if (!confirm(`content/${book.id}.json already exists. Replace it?`)) return;
+    return void writeIt(book, true);
+  }
+  const out = await writeIt(book, false);
+  if (out.conflict && confirm(`content/${book.id}.json already exists. Replace it?`)) await writeIt(book, true);
+};
+
+$("go-gate").onclick = async () => {
+  const text = $("manuscript").value.trim();
+  if (!text) return renderGate({ ok: false, failures: ["nothing to check"] }, "draft-result");
+  let book; try { book = JSON.parse(text); } catch (e) { return renderGate({ ok: false, failures: [`invalid JSON: ${e.message}`] }, "draft-result"); }
+  LAST_BOOK = book;
+  const { json } = await api("/api/draft", { manuscript: book, write: false });
+  renderGate(json.gate, "draft-result");
+};
+
+$("go-build").onclick = async () => {
+  const id = $("book_id").value;
+  if (!id) return;
+  $("go-build").disabled = true;
+  $("build-log").textContent = `building ${id} … the solver measures in pinned Chromium, so expect up to a minute\n`;
+  const { json } = await api("/api/build", { id });
+  if (json.job) {
+    await watch(json.job, (j) => {
+      $("build-log").textContent = (j.log || []).join("\n");
+      $("build-log").scrollTop = $("build-log").scrollHeight;
+    });
+  } else {
+    $("build-log").textContent = JSON.stringify(json, null, 2);
+  }
+  const { json: st } = await api("/api/state");
+  const b = st.books.find((x) => x.id === id);
+  const host = $("build-result"); host.textContent = "";
+  if (b?.built) host.append(el("p", {}, el("span", { class: "badge ok" }, "built"), " ", el("a", { href: b.built, target: "_blank" }, `open ${b.built}`)));
+  else host.append(el("p", { class: "note" }, "No artifact was written — the log above says why."));
+  await loadState();
+  $("go-build").disabled = false;
+};
+
+$("go-reload").onclick = () => loadState();
+
+/* ------------------------------------------------------------------------------- choosing a model */
+
+const parse = (v) => { const [provider, model] = String(v ?? "").split("\u0000"); return provider && model ? { provider, model } : null; };
+
+function fillModelSelect(sel, chosen) {
+  sel.textContent = "";
+  for (const p of PROVIDERS) {
+    const group = el("optgroup", { label: `${p.label}${p.ready ? "" : " — Hermes only"}` });
+    for (const m of p.models) group.append(el("option", { value: `${p.id}\u0000${m}` }, m));
+    if (!p.models.length) group.append(el("option", { value: `${p.id}\u0000` }, "no models listed"));
+    sel.append(group);
+  }
+  const want = chosen?.provider && chosen?.model ? `${chosen.provider}\u0000${chosen.model}` : "";
+  if (want) sel.value = want;
+}
+
+function describeModel(llm) {
+  return `${llm.model || "(none)"} on ${llm.provider} — ${llm.source}. ` +
+    (llm.has_key ? `Credential: ${llm.key_source}. ` : "No credential the studio can read. ") +
+    (llm.reachable ? `${llm.models.length} models answered at the endpoint.` : `The endpoint did not answer${llm.error ? `: ${llm.error}` : ""}.`);
+}
+
+async function applyModel() {
+  const note = $("model-note");
+  note.textContent = `switching to ${picked.model} …`;
+  const { status, json } = await api("/api/model", picked);
+  if (status !== 200) {
+    note.textContent = `${json.error ?? `HTTP ${status}`}${json.hint ? ` — ${json.hint}` : ""}`;
+    return;
+  }
+  if (json.llm) {
+    STATE = { ...STATE, llm: json.llm };
+    note.textContent = describeModel(json.llm);
+    $("model-detail").textContent = describeModel(json.llm);
+    $("llm").textContent = `model ${json.llm.model} (${json.llm.provider})`;
+  }
+}
+
+function onModelSelect(e) {
+  const p = parse(e.target.value);
+  if (!p) return;
+  picked = p;
+  fillModelSelect($("model"), picked);
+  fillModelSelect($("model2"), picked);
+  fillModelSelect($("model3"), picked);
+  applyModel();
+}
+
+/* ------------------------------------------------------------------------------------ the state */
+
+async function loadState() {
+  const { json } = await api("/api/state");
+  STATE = json;
+  // The repo path is useful to the person at the machine and noise to a visitor; the endpoint URL is
+  // theirs to know and not ours to publish. Both are local-only.
+  document.body.dataset.local = ["127.0.0.1", "localhost", "", "::1"].includes(location.hostname) ? "1" : "0";
+  $("design").textContent = `${json.design ?? "design"} · ${json.transitions.length} transitions · ${json.themes.length} themes`;
+  $("where").textContent = json.repo;
+  const p = $("preset"); p.textContent = "";
+  for (const q of json.presets) p.append(el("option", { value: q.id, title: q.label }, q.short ?? q.label));
+  p.onchange = () => {
+    const q = json.presets.find((x) => x.id === p.value); if (!q) return;
+    $("pages").value = q.pages; $("beats").value = q.beats;
+    $("age_from").value = q.age_from; $("age_to").value = q.age_to; $("reading_pt").value = q.reading_pt;
+  };
+  chipList($("front"), json.front_slots, ["title", "copyright", "dedication", "contents"]);
+  chipList($("back"), json.back_slots, ["memory_verse", "discussion", "about"]);
+
+  PROVIDERS = json.llm.providers ?? [];
+  fillModelSelect($("model"), picked ?? json.llm);
+  fillModelSelect($("model2"), picked ?? json.llm);
+  fillModelSelect($("model3"), picked ?? json.llm);
+  $("model").onchange = onModelSelect;
+  $("model2").onchange = onModelSelect;
+  $("model3").onchange = onModelSelect;
+  $("go-model").onclick = () => { const p = parse($("model3").value); if (p) { picked = p; applyModel(); } };
+  if (!picked) picked = { provider: json.llm.provider, model: json.llm.model };
+  $("model-note").textContent = describeModel(json.llm);
+  $("model-detail").textContent = describeModel(json.llm);
+  $("llm").textContent = `model ${json.llm.model} (${json.llm.provider})`;
+
+  const sel = $("book_id"); sel.textContent = "";
+  for (const b of json.books) sel.append(el("option", { value: b.id, title: `${b.title} — ${b.pages ?? "?"} pages` }, b.id));
+  const outField = $("out");
+  sel.onchange = () => (outField.value = `build/studio/${sel.value}.html`);
+  if (sel.value) outField.value = `build/studio/${sel.value}.html`;
+  const tb = $("books"); tb.textContent = "";
+  for (const b of json.books) {
+    const tr = el("tr");
+    tr.append(el("td", {}, b.id), el("td", {}, b.title), el("td", {}, String(b.pages ?? "")),
+      el("td", {}, String(b.beats ?? "")),
+      el("td", { class: b.gate?.ok ? "pass" : "fail" }, b.gate?.ok ? "pass" : `${b.gate?.failures?.length ?? "?"} fail`));
+    const td = el("td");
+    if (b.built) td.append(el("a", { href: b.built, target: "_blank" }, "built"));
+    if (b.release) td.append(document.createTextNode(" · "), el("a", { href: b.release, target: "_blank" }, "release"));
+    if (!b.built && !b.release) td.append(document.createTextNode("—"));
+    tr.append(td);
+    tb.append(tr);
+  }
+}
+
+loadState();
+</script>
+</body>
+</html>

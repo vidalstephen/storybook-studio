@@ -1,0 +1,2222 @@
+[
+  {
+    "id": "R-VSN-001",
+    "area": "VSN",
+    "text": "The system must produce the interactive HTML storybook, the reading PDF and the booklet PDF from one approved manuscript revision and one approved design revision.",
+    "spec_cite": "§1.2",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/01-product-requirements.md",
+    "verification": "T-VSN-001"
+  },
+  {
+    "id": "R-VSN-002",
+    "area": "VSN",
+    "text": "All three deliverables must render from a shared design token set so the visual identity is identical across outputs.",
+    "spec_cite": "§1.2",
+    "priority": "must",
+    "phase": 5,
+    "doc": "docs/01-product-requirements.md",
+    "verification": "T-VSN-002"
+  },
+  {
+    "id": "R-VSN-003",
+    "area": "VSN",
+    "text": "Content-quality decisions must take precedence over any word-count or page-count target when the two conflict.",
+    "spec_cite": "§1.3, D-16",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/01-product-requirements.md",
+    "verification": "T-VSN-003"
+  },
+  {
+    "id": "R-VSN-004",
+    "area": "VSN",
+    "text": "Short-form pacing and intentional page transitions must be first-class composition decisions rather than an emergent property of text volume.",
+    "spec_cite": "§1.3",
+    "priority": "must",
+    "phase": 4,
+    "doc": "docs/01-product-requirements.md",
+    "verification": "T-VSN-004"
+  },
+  {
+    "id": "R-VSN-005",
+    "area": "VSN",
+    "text": "The user must retain authority over every creative and editorial decision, and no such decision may be finalised without a recorded user action.",
+    "spec_cite": "§1.3, D-11",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/01-product-requirements.md",
+    "verification": "T-VSN-005"
+  },
+  {
+    "id": "R-VSN-006",
+    "area": "VSN",
+    "text": "Deterministic code must own all typography measurement, page geometry and rendering, and AI must never decide layout.",
+    "spec_cite": "§1.3, D-04",
+    "priority": "must",
+    "phase": 2,
+    "doc": "docs/01-product-requirements.md",
+    "verification": "T-VSN-006"
+  },
+  {
+    "id": "R-VSN-007",
+    "area": "VSN",
+    "text": "The digital and print editions must share one visual identity while keeping independent pagination.",
+    "spec_cite": "§1.3",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/01-product-requirements.md",
+    "verification": "T-VSN-007"
+  },
+  {
+    "id": "R-VSN-008",
+    "area": "VSN",
+    "text": "Approved text and approved page composition must be protected against unrequested regeneration.",
+    "spec_cite": "§1.3, D-11",
+    "priority": "must",
+    "phase": 4,
+    "doc": "docs/01-product-requirements.md",
+    "verification": "T-VSN-008"
+  },
+  {
+    "id": "R-VSN-009",
+    "area": "VSN",
+    "text": "Formatting defects must be emitted as findings before publication and never silently approximated.",
+    "spec_cite": "§1.3, §10.5",
+    "priority": "must",
+    "phase": 8,
+    "doc": "docs/01-product-requirements.md",
+    "verification": "T-VSN-009"
+  },
+  {
+    "id": "R-VSN-010",
+    "area": "VSN",
+    "text": "Generation must favour efficient, modular, reproducible computation and must avoid unnecessary AI calls.",
+    "spec_cite": "§1.3, §12.5",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/01-product-requirements.md",
+    "verification": "T-VSN-010"
+  },
+  {
+    "id": "R-VSN-011",
+    "area": "VSN",
+    "text": "Accessibility and readability must remain intact across every reference viewport and the print trim.",
+    "spec_cite": "§1.3",
+    "priority": "must",
+    "phase": 8,
+    "doc": "docs/01-product-requirements.md",
+    "verification": "T-VSN-011"
+  },
+  {
+    "id": "R-VSN-012",
+    "area": "VSN",
+    "text": "Every project must be recoverable, editable and version-controlled from files on local disk.",
+    "spec_cite": "§1.3, D-03",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/01-product-requirements.md",
+    "verification": "T-VSN-012"
+  },
+  {
+    "id": "R-PUB-001",
+    "area": "PUB",
+    "text": "The system must support the four publication types of §2: children's literature, biblical and faith-based, inspirational, and educational and other.",
+    "spec_cite": "§2",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/01-product-requirements.md",
+    "verification": "T-PUB-001"
+  },
+  {
+    "id": "R-PUB-002",
+    "area": "PUB",
+    "text": "Publication-specific rules must be implemented as data-driven publication profiles rather than as separate applications or code paths.",
+    "spec_cite": "§2, D-15",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/01-product-requirements.md",
+    "verification": "T-PUB-002"
+  },
+  {
+    "id": "R-PUB-003",
+    "area": "PUB",
+    "text": "The children's literature profile must supply age-appropriate defaults for typography, density tolerance, theme and length preset.",
+    "spec_cite": "§2.1",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/01-product-requirements.md",
+    "verification": "T-PUB-003"
+  },
+  {
+    "id": "R-PUB-004",
+    "area": "PUB",
+    "text": "The biblical profile must enable scripture source capture, scripture validation and the public-domain translation registry.",
+    "spec_cite": "§2.2, D-08",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/01-product-requirements.md",
+    "verification": "T-PUB-004"
+  },
+  {
+    "id": "R-PUB-005",
+    "area": "PUB",
+    "text": "The inspirational profile must operate without requiring any scripture reference.",
+    "spec_cite": "§2.3",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/01-product-requirements.md",
+    "verification": "T-PUB-005"
+  },
+  {
+    "id": "R-PUB-006",
+    "area": "PUB",
+    "text": "The educational and other profile must accept imported manuscripts that require editing and professional formatting.",
+    "spec_cite": "§2.4",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/01-product-requirements.md",
+    "verification": "T-PUB-006"
+  },
+  {
+    "id": "R-PUB-007",
+    "area": "PUB",
+    "text": "Adding a new publication type must require only a new profile document and no code change.",
+    "spec_cite": "§2, D-15",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/01-product-requirements.md",
+    "verification": "T-PUB-007"
+  },
+  {
+    "id": "R-PUB-008",
+    "area": "PUB",
+    "text": "A project must record its publication type and profile name as configuration fields resolved at creation.",
+    "spec_cite": "§3.2",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/01-product-requirements.md",
+    "verification": "T-PUB-008"
+  },
+  {
+    "id": "R-PUB-009",
+    "area": "PUB",
+    "text": "Every publication profile must declare the front matter and back matter its type requires.",
+    "spec_cite": "§2, §3.2",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/01-product-requirements.md",
+    "verification": "T-PUB-009"
+  },
+  {
+    "id": "R-PUB-010",
+    "area": "PUB",
+    "text": "Every publication profile must declare the density tolerance band used for its target age range.",
+    "spec_cite": "§6.7",
+    "priority": "must",
+    "phase": 2,
+    "doc": "docs/01-product-requirements.md",
+    "verification": "T-PUB-010"
+  },
+  {
+    "id": "R-WIZ-001",
+    "area": "WIZ",
+    "text": "The creation wizard must offer all ten creation modes of §3.1 as selectable entry points.",
+    "spec_cite": "§3.1",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/02-workflow-specification.md",
+    "verification": "T-WIZ-001"
+  },
+  {
+    "id": "R-WIZ-002",
+    "area": "WIZ",
+    "text": "The wizard must collect every story-configuration field of §3.2 before drafting may begin.",
+    "spec_cite": "§3.2",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/02-workflow-specification.md",
+    "verification": "T-WIZ-002"
+  },
+  {
+    "id": "R-WIZ-003",
+    "area": "WIZ",
+    "text": "The wizard must supply profile-derived recommended defaults for every configuration field so that no parameter must be set manually.",
+    "spec_cite": "§3.2",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/02-workflow-specification.md",
+    "verification": "T-WIZ-003"
+  },
+  {
+    "id": "R-WIZ-004",
+    "area": "WIZ",
+    "text": "Each length preset of §3.3 must resolve to a governing target printable page count (`target_print_pages`) and a target beat count; the page count, not a word budget, is the length the preset fixes.",
+    "spec_cite": "§3.3, D-16",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/02-workflow-specification.md",
+    "verification": "T-WIZ-004"
+  },
+  {
+    "id": "R-WIZ-005",
+    "area": "WIZ",
+    "text": "The wizard must present the target digital reading-page count and the target printable page count as two separate labelled targets.",
+    "spec_cite": "§3.3, D-06",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/02-workflow-specification.md",
+    "verification": "T-WIZ-005"
+  },
+  {
+    "id": "R-WIZ-006",
+    "area": "WIZ",
+    "text": "The wizard must record language and regional spelling convention into the project configuration.",
+    "spec_cite": "§3.2",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/02-workflow-specification.md",
+    "verification": "T-WIZ-006"
+  },
+  {
+    "id": "R-WIZ-007",
+    "area": "WIZ",
+    "text": "Import mode must ingest an existing manuscript as content blocks without retyping.",
+    "spec_cite": "§3.1",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/02-workflow-specification.md",
+    "verification": "T-WIZ-007"
+  },
+  {
+    "id": "R-WIZ-008",
+    "area": "WIZ",
+    "text": "Revise-an-existing-book must open the existing project rather than create a new one.",
+    "spec_cite": "§3.1",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/02-workflow-specification.md",
+    "verification": "T-WIZ-008"
+  },
+  {
+    "id": "R-WIZ-009",
+    "area": "WIZ",
+    "text": "New-edition-using-an-existing-design must start from a copy of the chosen project's design revision.",
+    "spec_cite": "§3.1",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/02-workflow-specification.md",
+    "verification": "T-WIZ-009"
+  },
+  {
+    "id": "R-WIZ-010",
+    "area": "WIZ",
+    "text": "Start-from-a-template must instantiate a project from a stored profile, theme and front and back matter set.",
+    "spec_cite": "§3.1",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/02-workflow-specification.md",
+    "verification": "T-WIZ-010"
+  },
+  {
+    "id": "R-WIZ-011",
+    "area": "WIZ",
+    "text": "The wizard must store front-matter and back-matter preferences as ordered lists in the project configuration.",
+    "spec_cite": "§3.2",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/02-workflow-specification.md",
+    "verification": "T-WIZ-011"
+  },
+  {
+    "id": "R-WIZ-012",
+    "area": "WIZ",
+    "text": "The wizard must store illustration readiness as declared intent only and must produce no illustration behaviour in V1.",
+    "spec_cite": "§3.2",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/02-workflow-specification.md",
+    "verification": "T-WIZ-012"
+  },
+  {
+    "id": "R-WIZ-013",
+    "area": "WIZ",
+    "text": "The wizard must reject a configuration whose age range, reading proficiency and length preset are mutually incompatible, with an actionable message.",
+    "spec_cite": "§3.2, §3.3",
+    "priority": "should",
+    "phase": 1,
+    "doc": "docs/02-workflow-specification.md",
+    "verification": "T-WIZ-013"
+  },
+  {
+    "id": "R-WIZ-014",
+    "area": "WIZ",
+    "text": "The wizard must map reading proficiency to default typography and density settings.",
+    "spec_cite": "§3.2",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/02-workflow-specification.md",
+    "verification": "T-WIZ-014"
+  },
+  {
+    "id": "R-WIZ-015",
+    "area": "WIZ",
+    "text": "A project's target word budget must be derived from its governing page target as `target_words = story_pages_target × balanced_lines_per_page × words_per_line_measured − reserve_words`, where `story_pages_target = target_print_pages − front_matter_pages − back_matter_pages`, `balanced_lines_per_page` is the ceiling of the project's resolved density band, and `words_per_line_measured` is measured on the project's concrete design revision from the project's version-controlled measure_probe, **in the face the project ships** (`app/assets/fonts`); the `reserve_words` term (heading lines plus forced-break slack × `words_per_line_measured`) is part of the formula and must never be dropped, so the reference fixture derives `9 × 16 × 7.9 − 31.6 = 1106 _words_` and not `1138`; the budget must never be authored independently of the page target.",
+    "spec_cite": "§3.2, D-16",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/02-workflow-specification.md",
+    "verification": "T-WIZ-015"
+  },
+  {
+    "id": "R-WIZ-016",
+    "area": "WIZ",
+    "text": "A print page count that misses `target_print_pages` after the pad-to-a-multiple-of-four step must be reported as a `PRINT_PAGE_COUNT_OFF_TARGET` finding (major, waivable), and must never be absorbed by padding or by prose expansion.",
+    "spec_cite": "§3.2, §9.4, D-16",
+    "priority": "must",
+    "phase": 6,
+    "doc": "docs/02-workflow-specification.md",
+    "verification": "T-WIZ-016"
+  },
+  {
+    "id": "R-WIZ-017",
+    "area": "WIZ",
+    "text": "A project's effective prose budget must be derived from the story pages' lines available for prose, never from the total story-page line budget: `lines_available_for_prose = story_pages_target × balanced_lines_per_page − lines_reserved_non_prose`, where `lines_reserved_non_prose` counts the lines the beat's non-prose roles occupy on the story pages (the `role: \"scripture\"` displays and the headings); the effective prose budget is `lines_available_for_prose × words_per_line_measured`, and the three quantities (`lines_available`, `lines_reserved_non_prose`, `lines_available_for_prose`) must be recorded on the blueprint's `length_model`. On the reference fixture `16 × 9 = 144` lines hold `26` scripture lines and `1` heading line, so `lines_available_for_prose = 117` and the effective prose budget is `117 × 7.9 = 924 _words_`, not the `1106` the total-line formula yields — which is why the reference book composes to 20 printed pages.",
+    "spec_cite": "§3.2, D-16",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/02-workflow-specification.md",
+    "verification": "T-WIZ-018"
+  },
+  {
+    "id": "R-IDE-001",
+    "area": "IDE",
+    "text": "Ideation must return at least two alternative story concepts per request when asked for alternatives.",
+    "spec_cite": "§4.1",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-IDE-102"
+  },
+  {
+    "id": "R-IDE-002",
+    "area": "IDE",
+    "text": "Each concept must contain a suggested title, premise, audience, genre, characters, conflict, lesson, conclusion, duration and structure.",
+    "spec_cite": "§4.1",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-IDE-103"
+  },
+  {
+    "id": "R-IDE-003",
+    "area": "IDE",
+    "text": "Concepts must be revisable, combinable, comparable and selectable before drafting begins.",
+    "spec_cite": "§4.1",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-IDE-104"
+  },
+  {
+    "id": "R-IDE-004",
+    "area": "IDE",
+    "text": "Drafting must be blocked until a StoryBlueprint containing every required field of §4.2 exists.",
+    "spec_cite": "§4.2",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-IDE-001"
+  },
+  {
+    "id": "R-IDE-005",
+    "area": "IDE",
+    "text": "The blueprint must define premise, target reader, opening hook, characters, setting, central theme, progression, turning points, climax, resolution, emotional effect, closing reflection, estimated length and page distribution.",
+    "spec_cite": "§4.2",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-IDE-001"
+  },
+  {
+    "id": "R-IDE-006",
+    "area": "IDE",
+    "text": "The blueprint must express progression as ordered narrative beats and page-turn opportunities rather than as chapters.",
+    "spec_cite": "§4.2",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-IDE-002"
+  },
+  {
+    "id": "R-IDE-007",
+    "area": "IDE",
+    "text": "The blueprint must be stored as a content-hashed, diffable and revertible revision.",
+    "spec_cite": "§4.2, D-10",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-IDE-105"
+  },
+  {
+    "id": "R-IDE-008",
+    "area": "IDE",
+    "text": "Beat derivation must produce exactly one Beat per blueprint progression entry, deterministically, with stable identifiers.",
+    "spec_cite": "§4.2, §6.5",
+    "priority": "must",
+    "phase": 2,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-IDE-002"
+  },
+  {
+    "id": "R-IDE-009",
+    "area": "IDE",
+    "text": "Each beat's word budget must be derived from the blueprint's estimated word count and the entry's weight.",
+    "spec_cite": "§5.1",
+    "priority": "must",
+    "phase": 2,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-IDE-003"
+  },
+  {
+    "id": "R-IDE-010",
+    "area": "IDE",
+    "text": "Removing a beat from the blueprint must unassign its blocks and raise a BEAT_ORPHANED_BLOCKS finding rather than delete the blocks.",
+    "spec_cite": "§4.2",
+    "priority": "must",
+    "phase": 2,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-IDE-010"
+  },
+  {
+    "id": "R-IDE-011",
+    "area": "IDE",
+    "text": "Every scripture reference must be recorded as a SourceReference resolving to book, chapter and verse.",
+    "spec_cite": "§4.3",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-IDE-011"
+  },
+  {
+    "id": "R-IDE-012",
+    "area": "IDE",
+    "text": "Scripture text and paraphrase must be distinguished structurally by block type and by source-reference coverage lists.",
+    "spec_cite": "§4.3",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-IDE-012"
+  },
+  {
+    "id": "R-IDE-013",
+    "area": "IDE",
+    "text": "Invented dialogue must be marked as paraphrase and must never be typed as scripture.",
+    "spec_cite": "§4.3, D-08",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-IDE-013"
+  },
+  {
+    "id": "R-IDE-014",
+    "area": "IDE",
+    "text": "A biblical project must preserve the source account's meaning and chronology, and a reordered beat must raise a SCRIPTURE_CHRONOLOGY_REORDERED finding.",
+    "spec_cite": "§4.3",
+    "priority": "must",
+    "phase": 2,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-IDE-014"
+  },
+  {
+    "id": "R-IDE-015",
+    "area": "IDE",
+    "text": "Questionable interpretations must be flagged for review and must block export until a human resolves the flag.",
+    "spec_cite": "§4.3",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-IDE-015"
+  },
+  {
+    "id": "R-IDE-016",
+    "area": "IDE",
+    "text": "Optional scripture references, memory verses, prayers and discussion questions must be supported as front and back matter.",
+    "spec_cite": "§4.3",
+    "priority": "should",
+    "phase": 5,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-IDE-016"
+  },
+  {
+    "id": "R-GEN-001",
+    "area": "GEN",
+    "text": "Story drafting must proceed section by section against the approved blueprint.",
+    "spec_cite": "§5.1",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-GEN-015"
+  },
+  {
+    "id": "R-GEN-002",
+    "area": "GEN",
+    "text": "Each drafted section must carry a narrative purpose, a word budget, relevant context, tone and emotional progression.",
+    "spec_cite": "§5.1",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-GEN-016"
+  },
+  {
+    "id": "R-GEN-003",
+    "area": "GEN",
+    "text": "Drafting must avoid filler, repeated lessons, extended dialogue and any expansion performed solely to fill pages.",
+    "spec_cite": "§5.1",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-GEN-017"
+  },
+  {
+    "id": "R-GEN-004",
+    "area": "GEN",
+    "text": "Drafted prose must be returned as a Proposal and must alter the manuscript only when that proposal is applied.",
+    "spec_cite": "§5.1, D-11",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-GEN-001"
+  },
+  {
+    "id": "R-GEN-005",
+    "area": "GEN",
+    "text": "Editorial review must offer the six review layers of §5.2 as selectable depths L1 structural, L2 line and copy, and L3 full.",
+    "spec_cite": "§5.2, D-12",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-GEN-005"
+  },
+  {
+    "id": "R-GEN-006",
+    "area": "GEN",
+    "text": "Editorial review must return findings that reference block identifiers and must never return rewritten prose.",
+    "spec_cite": "§5.2",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-GEN-006"
+  },
+  {
+    "id": "R-GEN-007",
+    "area": "GEN",
+    "text": "Review results must be cached by block hash, depth and profile so that unchanged blocks are never re-reviewed.",
+    "spec_cite": "§5.2, D-12",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-GEN-007"
+  },
+  {
+    "id": "R-GEN-008",
+    "area": "GEN",
+    "text": "No review layer may auto-apply a change, and applying a review suggestion must be a user action.",
+    "spec_cite": "§5.2, D-11",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-GEN-008"
+  },
+  {
+    "id": "R-GEN-009",
+    "area": "GEN",
+    "text": "Controlled revision must support all ten operations of §5.3 as Proposal-producing actions.",
+    "spec_cite": "§5.3",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-GEN-009"
+  },
+  {
+    "id": "R-GEN-010",
+    "area": "GEN",
+    "text": "Prose changes must remain localised to the targeted blocks unless a broader scope is explicitly requested.",
+    "spec_cite": "§5.3",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-GEN-010"
+  },
+  {
+    "id": "R-GEN-011",
+    "area": "GEN",
+    "text": "A rewrite proposal targeting content-locked material must be refused at creation.",
+    "spec_cite": "§5.3, §6.9",
+    "priority": "must",
+    "phase": 4,
+    "doc": "docs/07-lock-and-constraint-rules.md",
+    "verification": "T-GEN-011"
+  },
+  {
+    "id": "R-GEN-012",
+    "area": "GEN",
+    "text": "Every AI proposal must record its provider, model, prompt hash, timestamp and input revision hashes.",
+    "spec_cite": "§12.4, D-11",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/03-technical-architecture.md",
+    "verification": "T-GEN-012"
+  },
+  {
+    "id": "R-GEN-013",
+    "area": "GEN",
+    "text": "Every applied prose change must produce a manuscript revision carrying a parent pointer and a reason.",
+    "spec_cite": "§5.3, §12.2",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/04-project-data-schema.md",
+    "verification": "T-GEN-013"
+  },
+  {
+    "id": "R-GEN-014",
+    "area": "GEN",
+    "text": "The manuscript must expose derived statistics for word count, characters, reading minutes and reading level, recomputed by validation rather than trusted.",
+    "spec_cite": "§5.1, §10.1",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/04-project-data-schema.md",
+    "verification": "T-GEN-014"
+  },
+  {
+    "id": "R-CMP-001",
+    "area": "CMP",
+    "text": "Page composition must begin only after a manuscript revision exists.",
+    "spec_cite": "§6.2",
+    "priority": "must",
+    "phase": 2,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-CMP-096"
+  },
+  {
+    "id": "R-CMP-002",
+    "area": "CMP",
+    "text": "The system must generate an initial composition proposing page and spread boundaries, dramatic page turns and opening and closing pages.",
+    "spec_cite": "§6.2",
+    "priority": "must",
+    "phase": 2,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-CMP-097"
+  },
+  {
+    "id": "R-CMP-003",
+    "area": "CMP",
+    "text": "Available content space must be estimated by measuring the actual design revision's text box rather than a nominal average.",
+    "spec_cite": "§6.2, §6.7",
+    "priority": "must",
+    "phase": 2,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-CMP-098"
+  },
+  {
+    "id": "R-CMP-004",
+    "area": "CMP",
+    "text": "Composition must be a deterministic pure function of the manuscript, composition and design revisions plus the pagination target, with no network access.",
+    "spec_cite": "§6.2, D-04",
+    "priority": "must",
+    "phase": 2,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-CMP-099"
+  },
+  {
+    "id": "R-CMP-005",
+    "area": "CMP",
+    "text": "The editor must let the author move text blocks between pages and reorder unlocked story beats.",
+    "spec_cite": "§6.4",
+    "priority": "must",
+    "phase": 4,
+    "doc": "docs/06-composition-editor-ux.md",
+    "verification": "T-UXS-003"
+  },
+  {
+    "id": "R-CMP-006",
+    "area": "CMP",
+    "text": "The editor must let the author split a long page and merge adjacent pages.",
+    "spec_cite": "§6.4",
+    "priority": "must",
+    "phase": 4,
+    "doc": "docs/06-composition-editor-ux.md",
+    "verification": "T-UXS-005"
+  },
+  {
+    "id": "R-CMP-007",
+    "area": "CMP",
+    "text": "The editor must let the author insert and remove intentional page breaks.",
+    "spec_cite": "§6.4",
+    "priority": "must",
+    "phase": 4,
+    "doc": "docs/06-composition-editor-ux.md",
+    "verification": "T-UXS-007"
+  },
+  {
+    "id": "R-CMP-008",
+    "area": "CMP",
+    "text": "The editor must let the author create a page, insert an approved blank page and convert a page between the title, dedication, story, reflection and closing kinds.",
+    "spec_cite": "§6.4",
+    "priority": "must",
+    "phase": 4,
+    "doc": "docs/06-composition-editor-ux.md",
+    "verification": "T-UXS-009"
+  },
+  {
+    "id": "R-CMP-009",
+    "area": "CMP",
+    "text": "The editor must let the author assign a predefined page layout template to any page.",
+    "spec_cite": "§6.4, §6.8",
+    "priority": "must",
+    "phase": 4,
+    "doc": "docs/06-composition-editor-ux.md",
+    "verification": "T-UXS-012"
+  },
+  {
+    "id": "R-CMP-010",
+    "area": "CMP",
+    "text": "The editor must let the author lock selected content placement and lock an entire composed print page.",
+    "spec_cite": "§6.4, §6.9",
+    "priority": "must",
+    "phase": 4,
+    "doc": "docs/06-composition-editor-ux.md",
+    "verification": "T-UXS-013"
+  },
+  {
+    "id": "R-CMP-011",
+    "area": "CMP",
+    "text": "The editor must support undo, redo, comparison of page compositions and restoration of a previous approved composition.",
+    "spec_cite": "§6.4",
+    "priority": "should",
+    "phase": 4,
+    "doc": "docs/06-composition-editor-ux.md",
+    "verification": "T-UXS-017"
+  },
+  {
+    "id": "R-CMP-012",
+    "area": "CMP",
+    "text": "Accessible move commands must be available for every operation that can also be performed by dragging.",
+    "spec_cite": "§6.4",
+    "priority": "must",
+    "phase": 4,
+    "doc": "docs/06-composition-editor-ux.md",
+    "verification": "T-UXS-020"
+  },
+  {
+    "id": "R-CMP-013",
+    "area": "CMP",
+    "text": "A composition revision must store block identifiers and rules only, containing no prose, and must hold the logical, digital and print layers as distinct structures.",
+    "spec_cite": "§6.10, §12.3",
+    "priority": "must",
+    "phase": 2,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-CMP-030"
+  },
+  {
+    "id": "R-CMP-014",
+    "area": "CMP",
+    "text": "Digital pagination may introduce additional pages while logical beat order is always preserved.",
+    "spec_cite": "§6.10",
+    "priority": "must",
+    "phase": 3,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-CMP-033"
+  },
+  {
+    "id": "R-CMP-015",
+    "area": "CMP",
+    "text": "A cohesive story beat may be split across pages only when the split is intentional and editorially appropriate.",
+    "spec_cite": "§6.5",
+    "priority": "must",
+    "phase": 2,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-CMP-100"
+  },
+  {
+    "id": "R-CMP-016",
+    "area": "CMP",
+    "text": "Page density must be classified from measurement rather than raw word count, and density suggestions must offer only operations legal under the active locks and print state.",
+    "spec_cite": "§6.7",
+    "priority": "must",
+    "phase": 4,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-CMP-055"
+  },
+  {
+    "id": "R-CMP-017",
+    "area": "CMP",
+    "text": "An editorial change affecting meaning or content must require explicit user approval before it is applied.",
+    "spec_cite": "§6.7",
+    "priority": "must",
+    "phase": 4,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-CMP-101"
+  },
+  {
+    "id": "R-CMP-018",
+    "area": "CMP",
+    "text": "Page-turn recommendations must be ranked by deterministic signals and stored with an accepted, rejected or modified decision.",
+    "spec_cite": "§6.6",
+    "priority": "must",
+    "phase": 4,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-CMP-072"
+  },
+  {
+    "id": "R-CMP-019",
+    "area": "CMP",
+    "text": "A page-turn suggestion that would fragment a beat or violate a keep-together lock must be suppressed, and the system must never introduce contrived cliffhangers.",
+    "spec_cite": "§6.6",
+    "priority": "must",
+    "phase": 4,
+    "doc": "docs/05-content-and-composition-model.md",
+    "verification": "T-CMP-071"
+  },
+  {
+    "id": "R-CMP-020",
+    "area": "CMP",
+    "text": "Every lock must carry an explicit numeric precedence, a defined scope and a mandatory human reason, and an unsatisfiable set must be reported as a conflict naming the minimal conflicting locks.",
+    "spec_cite": "§6.9, D-07",
+    "priority": "must",
+    "phase": 4,
+    "doc": "docs/07-lock-and-constraint-rules.md",
+    "verification": "T-CMP-010"
+  },
+  {
+    "id": "R-CMP-021",
+    "area": "CMP",
+    "text": "A composition whose solve produces a critical violation must not be emitted as a revision.",
+    "spec_cite": "§6.9",
+    "priority": "must",
+    "phase": 4,
+    "doc": "docs/07-lock-and-constraint-rules.md",
+    "verification": "T-CMP-009"
+  },
+  {
+    "id": "R-CMP-022",
+    "area": "CMP",
+    "text": "An approval must bind a specific manuscript, composition and design revision triple, and any change that invalidates it must mark it stale with a named reason and trigger targeted revalidation only.",
+    "spec_cite": "§6.11",
+    "priority": "must",
+    "phase": 4,
+    "doc": "docs/12-approval-and-versioning-workflow.md",
+    "verification": "T-OPS-011"
+  },
+  {
+    "id": "R-DIG-001",
+    "area": "DIG",
+    "text": "The HTML storybook must be a self-contained deliverable that renders from a local file with no network access.",
+    "spec_cite": "§7.1, D-19",
+    "priority": "must",
+    "phase": 3,
+    "doc": "docs/08-pagination-strategy.md",
+    "verification": "T-DIG-040"
+  },
+  {
+    "id": "R-DIG-002",
+    "area": "DIG",
+    "text": "The reader must present a polished fullscreen reading experience on desktop, tablet and mobile.",
+    "spec_cite": "§7.1",
+    "priority": "must",
+    "phase": 3,
+    "doc": "docs/08-pagination-strategy.md",
+    "verification": "T-DIG-104"
+  },
+  {
+    "id": "R-DIG-003",
+    "area": "DIG",
+    "text": "The reader must present facing pages on wide screens and a single page on narrow screens.",
+    "spec_cite": "§7.1",
+    "priority": "must",
+    "phase": 3,
+    "doc": "docs/08-pagination-strategy.md",
+    "verification": "T-DIG-021"
+  },
+  {
+    "id": "R-DIG-004",
+    "area": "DIG",
+    "text": "The reader must never force a two-page spread when doing so would compromise readability.",
+    "spec_cite": "§7.1",
+    "priority": "must",
+    "phase": 3,
+    "doc": "docs/08-pagination-strategy.md",
+    "verification": "T-DIG-105"
+  },
+  {
+    "id": "R-DIG-005",
+    "area": "DIG",
+    "text": "The reader must accommodate both portrait and landscape orientations without losing content.",
+    "spec_cite": "§7.1",
+    "priority": "must",
+    "phase": 3,
+    "doc": "docs/08-pagination-strategy.md",
+    "verification": "T-DIG-023"
+  },
+  {
+    "id": "R-DIG-006",
+    "area": "DIG",
+    "text": "The reader must support all five configurable transitions of §7.2: page curl, fold, horizontal slide, fade and instant.",
+    "spec_cite": "§7.2",
+    "priority": "must",
+    "phase": 3,
+    "doc": "docs/08-pagination-strategy.md",
+    "verification": "T-DIG-106"
+  },
+  {
+    "id": "R-DIG-007",
+    "area": "DIG",
+    "text": "Animation must be non-essential to navigation, and interactions must remain functional when an animation is unavailable or fails.",
+    "spec_cite": "§7.2",
+    "priority": "must",
+    "phase": 3,
+    "doc": "docs/08-pagination-strategy.md",
+    "verification": "T-DIG-042"
+  },
+  {
+    "id": "R-DIG-008",
+    "area": "DIG",
+    "text": "The reader must respect the reduced-motion preference.",
+    "spec_cite": "§7.2, D-19",
+    "priority": "must",
+    "phase": 3,
+    "doc": "docs/08-pagination-strategy.md",
+    "verification": "T-DIG-042"
+  },
+  {
+    "id": "R-DIG-009",
+    "area": "DIG",
+    "text": "The reader must support previous and next, tap or click, touch swipe and keyboard navigation.",
+    "spec_cite": "§7.3",
+    "priority": "must",
+    "phase": 3,
+    "doc": "docs/08-pagination-strategy.md",
+    "verification": "T-DIG-041"
+  },
+  {
+    "id": "R-DIG-010",
+    "area": "DIG",
+    "text": "The reader must provide fullscreen mode, reading progress and optional page numbering.",
+    "spec_cite": "§7.3",
+    "priority": "must",
+    "phase": 3,
+    "doc": "docs/08-pagination-strategy.md",
+    "verification": "T-DIG-107"
+  },
+  {
+    "id": "R-DIG-011",
+    "area": "DIG",
+    "text": "The reader must provide a table of contents for books that exceed a configured length.",
+    "spec_cite": "§7.3",
+    "priority": "should",
+    "phase": 3,
+    "doc": "docs/08-pagination-strategy.md",
+    "verification": "T-DIG-011"
+  },
+  {
+    "id": "R-DIG-012",
+    "area": "DIG",
+    "text": "The reader must support font-size adjustment within the design revision's declared scale steps.",
+    "spec_cite": "§7.3",
+    "priority": "must",
+    "phase": 3,
+    "doc": "docs/08-pagination-strategy.md",
+    "verification": "T-DIG-012"
+  },
+  {
+    "id": "R-DIG-013",
+    "area": "DIG",
+    "text": "The reader must support resume-reading and jumping to the beginning or the end.",
+    "spec_cite": "§7.3",
+    "priority": "must",
+    "phase": 3,
+    "doc": "docs/08-pagination-strategy.md",
+    "verification": "T-DIG-013"
+  },
+  {
+    "id": "R-DIG-014",
+    "area": "DIG",
+    "text": "The reader must calculate pagination from viewport dimensions, page proportions, text measurements, font settings and border geometry.",
+    "spec_cite": "§7.4",
+    "priority": "must",
+    "phase": 3,
+    "doc": "docs/08-pagination-strategy.md",
+    "verification": "T-DIG-014"
+  },
+  {
+    "id": "R-DIG-015",
+    "area": "DIG",
+    "text": "The reader must reflow a passage that cannot fit rather than clipping or hiding it.",
+    "spec_cite": "§7.4, §6.10",
+    "priority": "must",
+    "phase": 3,
+    "doc": "docs/08-pagination-strategy.md",
+    "verification": "T-DIG-015"
+  },
+  {
+    "id": "R-DIG-016",
+    "area": "DIG",
+    "text": "The reader must disclose when a requested composition cannot be reproduced on the current viewport.",
+    "spec_cite": "§6.10, §7.4",
+    "priority": "must",
+    "phase": 3,
+    "doc": "docs/08-pagination-strategy.md",
+    "verification": "T-DIG-016"
+  },
+  {
+    "id": "R-DIG-017",
+    "area": "DIG",
+    "text": "The reader must provide accessible navigation through correct focus order, control labels and landmarks.",
+    "spec_cite": "§7.3",
+    "priority": "must",
+    "phase": 3,
+    "doc": "docs/08-pagination-strategy.md",
+    "verification": "T-DIG-017"
+  },
+  {
+    "id": "R-DSN-001",
+    "area": "DSN",
+    "text": "A single approved design revision must supply design tokens to both the HTML and the PDF renderer.",
+    "spec_cite": "§8.1",
+    "priority": "must",
+    "phase": 5,
+    "doc": "docs/09-design-token-architecture.md",
+    "verification": "T-VSN-002"
+  },
+  {
+    "id": "R-DSN-002",
+    "area": "DSN",
+    "text": "The token set must cover typography, page backgrounds, border styles, border thickness, border offsets, content padding, heading hierarchy, decorative accents, page numbering, section dividers and page layout presets.",
+    "spec_cite": "§8.1",
+    "priority": "must",
+    "phase": 5,
+    "doc": "docs/09-design-token-architecture.md",
+    "verification": "T-DSN-103"
+  },
+  {
+    "id": "R-DSN-003",
+    "area": "DSN",
+    "text": "The design revision must carry separate digital and print unit sets so each renderer reads only its own.",
+    "spec_cite": "§8.1",
+    "priority": "must",
+    "phase": 5,
+    "doc": "docs/09-design-token-architecture.md",
+    "verification": "T-DSN-104"
+  },
+  {
+    "id": "R-DSN-004",
+    "area": "DSN",
+    "text": "V1 must ship the eight themes of §8.2 as token documents.",
+    "spec_cite": "§8.2",
+    "priority": "must",
+    "phase": 5,
+    "doc": "docs/09-design-token-architecture.md",
+    "verification": "T-DSN-006"
+  },
+  {
+    "id": "R-DSN-005",
+    "area": "DSN",
+    "text": "Every shipped theme must produce a complete design without illustrations.",
+    "spec_cite": "§8.2",
+    "priority": "must",
+    "phase": 5,
+    "doc": "docs/09-design-token-architecture.md",
+    "verification": "T-DSN-006"
+  },
+  {
+    "id": "R-DSN-006",
+    "area": "DSN",
+    "text": "The design system must provide age-appropriate typography presets plus manual adjustment.",
+    "spec_cite": "§8.3",
+    "priority": "must",
+    "phase": 5,
+    "doc": "docs/09-design-token-architecture.md",
+    "verification": "T-DSN-105"
+  },
+  {
+    "id": "R-DSN-007",
+    "area": "DSN",
+    "text": "Typography must expose font size, actual font metrics, line length, line spacing, paragraph spacing and contrast.",
+    "spec_cite": "§8.3",
+    "priority": "must",
+    "phase": 5,
+    "doc": "docs/09-design-token-architecture.md",
+    "verification": "T-DSN-106"
+  },
+  {
+    "id": "R-DSN-008",
+    "area": "DSN",
+    "text": "The design must enforce a readable minimum font size and must refuse to render text below it.",
+    "spec_cite": "§8.3",
+    "priority": "must",
+    "phase": 5,
+    "doc": "docs/09-design-token-architecture.md",
+    "verification": "T-DSN-004"
+  },
+  {
+    "id": "R-DSN-009",
+    "area": "DSN",
+    "text": "A custom font may be selected only when it has an entry in the licensing registry.",
+    "spec_cite": "§8.3, D-09",
+    "priority": "must",
+    "phase": 5,
+    "doc": "docs/09-design-token-architecture.md",
+    "verification": "T-DSN-009"
+  },
+  {
+    "id": "R-DSN-010",
+    "area": "DSN",
+    "text": "A font may be selected for a print design only when its registry entry declares that PDF embedding is permitted.",
+    "spec_cite": "§8.3, D-09",
+    "priority": "must",
+    "phase": 6,
+    "doc": "docs/09-design-token-architecture.md",
+    "verification": "T-DSN-010"
+  },
+  {
+    "id": "R-DSN-011",
+    "area": "DSN",
+    "text": "The print renderer must assert that font embedding succeeded before declaring a PDF valid.",
+    "spec_cite": "§8.3, D-09",
+    "priority": "must",
+    "phase": 6,
+    "doc": "docs/09-design-token-architecture.md",
+    "verification": "T-DSN-011"
+  },
+  {
+    "id": "R-DSN-012",
+    "area": "DSN",
+    "text": "The design revision must carry language and hyphenation as part of the pagination input.",
+    "spec_cite": "§3.2, D-04",
+    "priority": "must",
+    "phase": 5,
+    "doc": "docs/09-design-token-architecture.md",
+    "verification": "T-DSN-012"
+  },
+  {
+    "id": "R-DSN-013",
+    "area": "DSN",
+    "text": "The design revision must declare which reader overrides are permitted, including font scale and the allowed theme list.",
+    "spec_cite": "§7.3",
+    "priority": "must",
+    "phase": 5,
+    "doc": "docs/09-design-token-architecture.md",
+    "verification": "T-DSN-013"
+  },
+  {
+    "id": "R-PRT-001",
+    "area": "PRT",
+    "text": "The print renderer must lay out pages using deterministic physical page measurements.",
+    "spec_cite": "§9.1",
+    "priority": "must",
+    "phase": 6,
+    "doc": "docs/08-pagination-strategy.md",
+    "verification": "T-PRT-001"
+  },
+  {
+    "id": "R-PRT-002",
+    "area": "PRT",
+    "text": "The print renderer must support US Letter folded to half-letter, A4 folded to A5, and custom paper sizes.",
+    "spec_cite": "§9.1",
+    "priority": "should",
+    "phase": 6,
+    "doc": "docs/08-pagination-strategy.md",
+    "verification": "T-PRT-002"
+  },
+  {
+    "id": "R-PRT-003",
+    "area": "PRT",
+    "text": "The print renderer must apply fixed inner and outer margins, a binding allowance and page-level composition rules.",
+    "spec_cite": "§9.1",
+    "priority": "must",
+    "phase": 6,
+    "doc": "docs/08-pagination-strategy.md",
+    "verification": "T-PRT-003"
+  },
+  {
+    "id": "R-PRT-004",
+    "area": "PRT",
+    "text": "Every printed page must use the approved border specification with identical thickness within a selected style.",
+    "spec_cite": "§9.2",
+    "priority": "must",
+    "phase": 6,
+    "doc": "docs/08-pagination-strategy.md",
+    "verification": "T-PRT-004"
+  },
+  {
+    "id": "R-PRT-005",
+    "area": "PRT",
+    "text": "Borders must remain inside the print-safe area and must not collide with text or footers.",
+    "spec_cite": "§9.2",
+    "priority": "must",
+    "phase": 6,
+    "doc": "docs/08-pagination-strategy.md",
+    "verification": "T-PRT-005"
+  },
+  {
+    "id": "R-PRT-006",
+    "area": "PRT",
+    "text": "The perimeter frame must remain visually consistent across pages even where interior page templates vary.",
+    "spec_cite": "§9.2",
+    "priority": "must",
+    "phase": 6,
+    "doc": "docs/08-pagination-strategy.md",
+    "verification": "T-PRT-006"
+  },
+  {
+    "id": "R-PRT-007",
+    "area": "PRT",
+    "text": "The print engine must measure actual content fit and the resulting physical page count.",
+    "spec_cite": "§9.3",
+    "priority": "must",
+    "phase": 6,
+    "doc": "docs/08-pagination-strategy.md",
+    "verification": "T-PRT-007"
+  },
+  {
+    "id": "R-PRT-008",
+    "area": "PRT",
+    "text": "Print pagination must honour the frozen approved page assignments supplied by the composition editor.",
+    "spec_cite": "§9.3, D-05",
+    "priority": "must",
+    "phase": 6,
+    "doc": "docs/08-pagination-strategy.md",
+    "verification": "T-PRT-008"
+  },
+  {
+    "id": "R-PRT-009",
+    "area": "PRT",
+    "text": "On overflow the engine must detect it, identify the affected pages, preserve protected content and locks, and refuse to reflow a frozen page rather than approximating it.",
+    "spec_cite": "§9.3, D-05",
+    "priority": "must",
+    "phase": 8,
+    "doc": "docs/08-pagination-strategy.md",
+    "verification": "T-PRT-009"
+  },
+  {
+    "id": "R-PRT-010",
+    "area": "PRT",
+    "text": "The print engine must never silently revise approved prose.",
+    "spec_cite": "§9.3",
+    "priority": "must",
+    "phase": 6,
+    "doc": "docs/08-pagination-strategy.md",
+    "verification": "T-PRT-010"
+  },
+  {
+    "id": "R-PRT-011",
+    "area": "PRT",
+    "text": "The total imposed page count of a saddle-stitched booklet must be an exact multiple of four.",
+    "spec_cite": "§9.4",
+    "priority": "must",
+    "phase": 7,
+    "doc": "docs/10-booklet-imposition-spec.md",
+    "verification": "T-PRT-011"
+  },
+  {
+    "id": "R-PRT-012",
+    "area": "PRT",
+    "text": "Imposition must order pages correctly for folding, place front and back correctly and respect duplex flip-edge rules.",
+    "spec_cite": "§9.4",
+    "priority": "must",
+    "phase": 7,
+    "doc": "docs/10-booklet-imposition-spec.md",
+    "verification": "T-PRT-012"
+  },
+  {
+    "id": "R-PRT-013",
+    "area": "PRT",
+    "text": "Blank pages required for page-count parity must be inserted deliberately at front and back matter boundaries only.",
+    "spec_cite": "§9.4, D-16",
+    "priority": "must",
+    "phase": 7,
+    "doc": "docs/10-booklet-imposition-spec.md",
+    "verification": "T-PRT-013"
+  },
+  {
+    "id": "R-PRT-014",
+    "area": "PRT",
+    "text": "The system must offer the reading PDF and the imposed booklet PDF as two separate downloads.",
+    "spec_cite": "§9.4",
+    "priority": "must",
+    "phase": 7,
+    "doc": "docs/10-booklet-imposition-spec.md",
+    "verification": "T-PRT-014"
+  },
+  {
+    "id": "R-PRT-015",
+    "area": "PRT",
+    "text": "The booklet preview must show how sheets fold and which pages will face one another.",
+    "spec_cite": "§9.4",
+    "priority": "must",
+    "phase": 7,
+    "doc": "docs/10-booklet-imposition-spec.md",
+    "verification": "T-PRT-015"
+  },
+  {
+    "id": "R-PRT-016",
+    "area": "PRT",
+    "text": "The system must generate a print guide specifying paper size, sheet count, duplex requirements, flip-edge settings, actual-size guidance, folding orientation and binding recommendations.",
+    "spec_cite": "§9.5",
+    "priority": "must",
+    "phase": 7,
+    "doc": "docs/10-booklet-imposition-spec.md",
+    "verification": "T-PRT-016"
+  },
+  {
+    "id": "R-PRT-017",
+    "area": "PRT",
+    "text": "The system must support visual verification of booklet order before the imposed PDF is downloaded.",
+    "spec_cite": "§9.5",
+    "priority": "must",
+    "phase": 7,
+    "doc": "docs/10-booklet-imposition-spec.md",
+    "verification": "T-PRT-017"
+  },
+  {
+    "id": "R-PRT-018",
+    "area": "PRT",
+    "text": "The print output must have correct page numbering and must contain no unintended blank or missing pages.",
+    "spec_cite": "§10.4",
+    "priority": "must",
+    "phase": 8,
+    "doc": "docs/11-validation-strategy.md",
+    "verification": "T-PRT-018"
+  },
+  {
+    "id": "R-QAS-001",
+    "area": "QAS",
+    "text": "Content validation must verify completeness, coherence, reading level and theme consistency.",
+    "spec_cite": "§10.1",
+    "priority": "must",
+    "phase": 8,
+    "doc": "docs/11-validation-strategy.md",
+    "verification": "T-QAS-018"
+  },
+  {
+    "id": "R-QAS-002",
+    "area": "QAS",
+    "text": "Content validation must detect accidental duplication of prose.",
+    "spec_cite": "§10.1",
+    "priority": "must",
+    "phase": 8,
+    "doc": "docs/11-validation-strategy.md",
+    "verification": "T-QAS-019"
+  },
+  {
+    "id": "R-QAS-003",
+    "area": "QAS",
+    "text": "Scripture fidelity must be validated against the resolved source references where scripture applies.",
+    "spec_cite": "§10.1",
+    "priority": "must",
+    "phase": 8,
+    "doc": "docs/11-validation-strategy.md",
+    "verification": "T-IDE-022"
+  },
+  {
+    "id": "R-QAS-004",
+    "area": "QAS",
+    "text": "Composition validation must verify that story beats appear in the intended sequence.",
+    "spec_cite": "§10.2",
+    "priority": "must",
+    "phase": 8,
+    "doc": "docs/11-validation-strategy.md",
+    "verification": "T-CMP-033"
+  },
+  {
+    "id": "R-QAS-005",
+    "area": "QAS",
+    "text": "Composition validation must verify that protected passages have not been modified.",
+    "spec_cite": "§10.2",
+    "priority": "must",
+    "phase": 8,
+    "doc": "docs/11-validation-strategy.md",
+    "verification": "T-CMP-008"
+  },
+  {
+    "id": "R-QAS-006",
+    "area": "QAS",
+    "text": "Composition validation must report each required page break that is not honoured where feasible.",
+    "spec_cite": "§10.2",
+    "priority": "must",
+    "phase": 8,
+    "doc": "docs/11-validation-strategy.md",
+    "verification": "T-CMP-034"
+  },
+  {
+    "id": "R-QAS-007",
+    "area": "QAS",
+    "text": "Composition validation must detect story content that is missing or duplicated.",
+    "spec_cite": "§10.2",
+    "priority": "must",
+    "phase": 8,
+    "doc": "docs/11-validation-strategy.md",
+    "verification": "T-CMP-031"
+  },
+  {
+    "id": "R-QAS-008",
+    "area": "QAS",
+    "text": "Composition validation must flag an unsatisfied lock as unsatisfied and must never repair it silently.",
+    "spec_cite": "§10.2, §6.9",
+    "priority": "must",
+    "phase": 8,
+    "doc": "docs/11-validation-strategy.md",
+    "verification": "T-CMP-040"
+  },
+  {
+    "id": "R-QAS-009",
+    "area": "QAS",
+    "text": "Composition validation must verify that every blank page is intentional and has a recorded reason.",
+    "spec_cite": "§10.2",
+    "priority": "must",
+    "phase": 8,
+    "doc": "docs/11-validation-strategy.md",
+    "verification": "T-CMP-037"
+  },
+  {
+    "id": "R-QAS-010",
+    "area": "QAS",
+    "text": "Digital rendering validation must detect clipping, overlap and missing text.",
+    "spec_cite": "§10.3",
+    "priority": "must",
+    "phase": 8,
+    "doc": "docs/11-validation-strategy.md",
+    "verification": "T-QAS-010"
+  },
+  {
+    "id": "R-QAS-011",
+    "area": "QAS",
+    "text": "Digital rendering validation must verify responsive layout, readable typography and functional page controls.",
+    "spec_cite": "§10.3",
+    "priority": "must",
+    "phase": 8,
+    "doc": "docs/11-validation-strategy.md",
+    "verification": "T-QAS-011"
+  },
+  {
+    "id": "R-QAS-012",
+    "area": "QAS",
+    "text": "Digital rendering validation must verify correct behaviour under font scaling, reduced motion and screen orientation change.",
+    "spec_cite": "§10.3",
+    "priority": "must",
+    "phase": 8,
+    "doc": "docs/11-validation-strategy.md",
+    "verification": "T-QAS-012"
+  },
+  {
+    "id": "R-QAS-013",
+    "area": "QAS",
+    "text": "Print rendering validation must verify physical dimensions, print-safe margins, gutters and border consistency.",
+    "spec_cite": "§10.4",
+    "priority": "must",
+    "phase": 8,
+    "doc": "docs/11-validation-strategy.md",
+    "verification": "T-QAS-013"
+  },
+  {
+    "id": "R-QAS-014",
+    "area": "QAS",
+    "text": "Print rendering validation must verify the absence of overflow and missing glyphs, correct imposition, and content that matches the approved manuscript.",
+    "spec_cite": "§10.4",
+    "priority": "must",
+    "phase": 8,
+    "doc": "docs/11-validation-strategy.md",
+    "verification": "T-QAS-014"
+  },
+  {
+    "id": "R-QAS-015",
+    "area": "QAS",
+    "text": "Automated correction must follow the §10.5 ladder, exhausting deterministic correction before any AI-assisted revision is proposed.",
+    "spec_cite": "§10.5",
+    "priority": "must",
+    "phase": 8,
+    "doc": "docs/11-validation-strategy.md",
+    "verification": "T-QAS-015"
+  },
+  {
+    "id": "R-QAS-016",
+    "area": "QAS",
+    "text": "A publication must not receive a final approved status while an unresolved critical rendering problem remains.",
+    "spec_cite": "§10.5",
+    "priority": "must",
+    "phase": 8,
+    "doc": "docs/11-validation-strategy.md",
+    "verification": "T-QAS-016"
+  },
+  {
+    "id": "R-QAS-017",
+    "area": "QAS",
+    "text": "Every finding must carry a code, a family, a severity, affected references, evidence and a blocking decision.",
+    "spec_cite": "§10, D-05",
+    "priority": "must",
+    "phase": 8,
+    "doc": "docs/11-validation-strategy.md",
+    "verification": "T-QAS-017"
+  },
+  {
+    "id": "R-UXS-001",
+    "area": "UXS",
+    "text": "The project dashboard must display title, publication type, audience, current stage and the status of manuscript, composition, design, digital preview, print proof, approval and export.",
+    "spec_cite": "§11.1",
+    "priority": "must",
+    "phase": 4,
+    "doc": "docs/06-composition-editor-ux.md",
+    "verification": "T-UXS-105"
+  },
+  {
+    "id": "R-UXS-002",
+    "area": "UXS",
+    "text": "The dashboard must display the digital page-count range and the print page count together and always labelled.",
+    "spec_cite": "§11.1, D-06",
+    "priority": "must",
+    "phase": 4,
+    "doc": "docs/06-composition-editor-ux.md",
+    "verification": "T-DIG-027"
+  },
+  {
+    "id": "R-UXS-003",
+    "area": "UXS",
+    "text": "The workspace must provide the seven separated editing environments of §11.2.",
+    "spec_cite": "§11.2",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/06-composition-editor-ux.md",
+    "verification": "T-UXS-106"
+  },
+  {
+    "id": "R-UXS-004",
+    "area": "UXS",
+    "text": "The Story Editor must support developing and refining the manuscript.",
+    "spec_cite": "§11.2",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/06-composition-editor-ux.md",
+    "verification": "T-UXS-107"
+  },
+  {
+    "id": "R-UXS-005",
+    "area": "UXS",
+    "text": "The Story Blueprint environment must manage premise, characters, themes, narrative beats and source references.",
+    "spec_cite": "§11.2",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/06-composition-editor-ux.md",
+    "verification": "T-UXS-108"
+  },
+  {
+    "id": "R-UXS-006",
+    "area": "UXS",
+    "text": "The Page Composition Editor must provide the page navigator, composition canvas, content inspector, design inspector, composition assistant and status and validation panel of §6.3.",
+    "spec_cite": "§11.2, §6.3",
+    "priority": "must",
+    "phase": 4,
+    "doc": "docs/06-composition-editor-ux.md",
+    "verification": "T-UXS-109"
+  },
+  {
+    "id": "R-UXS-007",
+    "area": "UXS",
+    "text": "The Design Studio must allow the author to customise visual appearance, typography, borders and page templates.",
+    "spec_cite": "§11.2",
+    "priority": "must",
+    "phase": 5,
+    "doc": "docs/06-composition-editor-ux.md",
+    "verification": "T-UXS-110"
+  },
+  {
+    "id": "R-UXS-008",
+    "area": "UXS",
+    "text": "The Digital Preview must render the responsive HTML presentation inside the workspace.",
+    "spec_cite": "§11.2",
+    "priority": "must",
+    "phase": 3,
+    "doc": "docs/06-composition-editor-ux.md",
+    "verification": "T-UXS-111"
+  },
+  {
+    "id": "R-UXS-009",
+    "area": "UXS",
+    "text": "The Print Preview must render fixed pages, spreads, booklet arrangement and print quality.",
+    "spec_cite": "§11.2",
+    "priority": "must",
+    "phase": 6,
+    "doc": "docs/06-composition-editor-ux.md",
+    "verification": "T-UXS-112"
+  },
+  {
+    "id": "R-UXS-010",
+    "area": "UXS",
+    "text": "The Publication Center must present validation results, approval controls and export actions.",
+    "spec_cite": "§11.2",
+    "priority": "must",
+    "phase": 7,
+    "doc": "docs/06-composition-editor-ux.md",
+    "verification": "T-UXS-113"
+  },
+  {
+    "id": "R-UXS-011",
+    "area": "UXS",
+    "text": "Guided mode must require the user to approve each major decision.",
+    "spec_cite": "§11.3",
+    "priority": "must",
+    "phase": 4,
+    "doc": "docs/06-composition-editor-ux.md",
+    "verification": "T-VSN-005"
+  },
+  {
+    "id": "R-UXS-012",
+    "area": "UXS",
+    "text": "Autonomous mode must operate only on unlocked, unapproved content and must never create an approval.",
+    "spec_cite": "§11.3, D-11",
+    "priority": "must",
+    "phase": 4,
+    "doc": "docs/06-composition-editor-ux.md",
+    "verification": "T-UXS-114"
+  },
+  {
+    "id": "R-UXS-013",
+    "area": "UXS",
+    "text": "The system must not silently change locked or approved material in either operating mode.",
+    "spec_cite": "§11.3",
+    "priority": "must",
+    "phase": 4,
+    "doc": "docs/06-composition-editor-ux.md",
+    "verification": "T-VSN-008"
+  },
+  {
+    "id": "R-UXS-014",
+    "area": "UXS",
+    "text": "Every long-running action must return a job identifier with visible progress rather than blocking the request.",
+    "spec_cite": "§11.3, D-17",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/06-composition-editor-ux.md",
+    "verification": "T-UXS-101"
+  },
+  {
+    "id": "R-ARC-001",
+    "area": "ARC",
+    "text": "The seven engines of §12.1 must be implemented as modules, each exposing one public interface and not reaching into another module's storage.",
+    "spec_cite": "§12.1",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/03-technical-architecture.md",
+    "verification": "T-ARC-106"
+  },
+  {
+    "id": "R-ARC-002",
+    "area": "ARC",
+    "text": "Module dependency direction must be one-way, and the digital, print and validation modules must be unable to trigger AI or to write prose.",
+    "spec_cite": "§12.1, §12.4",
+    "priority": "must",
+    "phase": 2,
+    "doc": "docs/03-technical-architecture.md",
+    "verification": "T-ARC-107"
+  },
+  {
+    "id": "R-ARC-003",
+    "area": "ARC",
+    "text": "The system must maintain separate records for all sixteen kinds of structured project data listed in §12.2.",
+    "spec_cite": "§12.2",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/04-project-data-schema.md",
+    "verification": "T-ARC-018"
+  },
+  {
+    "id": "R-ARC-004",
+    "area": "ARC",
+    "text": "Content blocks and story beats must have stable identifiers so that a revision does not require rebuilding all composition data.",
+    "spec_cite": "§12.2",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/04-project-data-schema.md",
+    "verification": "T-IDE-006"
+  },
+  {
+    "id": "R-ARC-005",
+    "area": "ARC",
+    "text": "The approved manuscript must remain the single authoritative content source.",
+    "spec_cite": "§12.3",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/04-project-data-schema.md",
+    "verification": "T-PRT-010"
+  },
+  {
+    "id": "R-ARC-006",
+    "area": "ARC",
+    "text": "The composition editor must reference manuscript content by identifier and must store no independent copy of the prose.",
+    "spec_cite": "§12.3",
+    "priority": "must",
+    "phase": 2,
+    "doc": "docs/04-project-data-schema.md",
+    "verification": "T-ARC-005"
+  },
+  {
+    "id": "R-ARC-007",
+    "area": "ARC",
+    "text": "The digital and print renderers must generate from the same approved content revision.",
+    "spec_cite": "§12.3",
+    "priority": "must",
+    "phase": 6,
+    "doc": "docs/04-project-data-schema.md",
+    "verification": "T-PRT-069"
+  },
+  {
+    "id": "R-ARC-008",
+    "area": "ARC",
+    "text": "The system must support configurable AI providers and models for all seven task kinds of §12.4.",
+    "spec_cite": "§12.4",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/03-technical-architecture.md",
+    "verification": "T-ARC-025"
+  },
+  {
+    "id": "R-ARC-009",
+    "area": "ARC",
+    "text": "Typography measurement, page geometry, rendering, booklet imposition and file validation must be handled by conventional deterministic code and never by a model.",
+    "spec_cite": "§12.4, D-04",
+    "priority": "must",
+    "phase": 2,
+    "doc": "docs/03-technical-architecture.md",
+    "verification": "T-ARC-028"
+  },
+  {
+    "id": "R-ARC-010",
+    "area": "ARC",
+    "text": "Every revision must be content-addressed by a hash over its canonical JSON serialisation.",
+    "spec_cite": "§12.5, D-10",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/04-project-data-schema.md",
+    "verification": "T-ARC-004"
+  },
+  {
+    "id": "R-ARC-011",
+    "area": "ARC",
+    "text": "Only the blocks that changed and the pages they affect may be regenerated or re-measured after an edit.",
+    "spec_cite": "§12.5",
+    "priority": "must",
+    "phase": 4,
+    "doc": "docs/03-technical-architecture.md",
+    "verification": "T-DIG-008"
+  },
+  {
+    "id": "R-ARC-012",
+    "area": "ARC",
+    "text": "Cached manuscript summaries must be keyed by the content hash of the manuscript they summarise.",
+    "spec_cite": "§12.5",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/03-technical-architecture.md",
+    "verification": "T-ARC-108"
+  },
+  {
+    "id": "R-ARC-013",
+    "area": "ARC",
+    "text": "All AI and render work must run as checkpointed, resumable jobs with bounded retries and an explicit abandoned terminal state.",
+    "spec_cite": "§12.5, D-17",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/03-technical-architecture.md",
+    "verification": "T-ARC-040"
+  },
+  {
+    "id": "R-ARC-014",
+    "area": "ARC",
+    "text": "AI calls must be cached by prompt hash, input hash, provider and model, and a replayed cached call must be byte-identical.",
+    "spec_cite": "§12.5",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/03-technical-architecture.md",
+    "verification": "T-ARC-021"
+  },
+  {
+    "id": "R-ARC-015",
+    "area": "ARC",
+    "text": "A project must be a directory of human-readable JSON documents, with any database used only as a disposable index and job queue.",
+    "spec_cite": "§12.2, D-03",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/03-technical-architecture.md",
+    "verification": "T-ARC-045"
+  },
+  {
+    "id": "R-ARC-016",
+    "area": "ARC",
+    "text": "Opening a project whose schema version exceeds the engine's supported version must be refused and never silently downgraded.",
+    "spec_cite": "§12.2, D-03",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/03-technical-architecture.md",
+    "verification": "T-ARC-013"
+  },
+  {
+    "id": "R-ARC-017",
+    "area": "ARC",
+    "text": "Any AI result that will influence page geometry must first be materialised as a stored revision.",
+    "spec_cite": "§12.4, D-11",
+    "priority": "must",
+    "phase": 2,
+    "doc": "docs/03-technical-architecture.md",
+    "verification": "T-ARC-029"
+  },
+  {
+    "id": "R-OPS-001",
+    "area": "OPS",
+    "text": "Projects must save to disk and reload with all manual composition changes intact.",
+    "spec_cite": "§13, §15.2",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/12-approval-and-versioning-workflow.md",
+    "verification": "T-OPS-001"
+  },
+  {
+    "id": "R-OPS-002",
+    "area": "OPS",
+    "text": "A step interrupted by a crash, a rate limit or a provider fault must resume from its last checkpoint.",
+    "spec_cite": "§13, §15.5",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/12-approval-and-versioning-workflow.md",
+    "verification": "T-OPS-002"
+  },
+  {
+    "id": "R-OPS-003",
+    "area": "OPS",
+    "text": "Revisions must be tracked with a parent pointer, a reason and an actor.",
+    "spec_cite": "§13, §15.5",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/12-approval-and-versioning-workflow.md",
+    "verification": "T-OPS-003"
+  },
+  {
+    "id": "R-OPS-004",
+    "area": "OPS",
+    "text": "An approved publication must be reproducible from its recorded environment and revision triple.",
+    "spec_cite": "§15.5, D-14",
+    "priority": "must",
+    "phase": 9,
+    "doc": "docs/12-approval-and-versioning-workflow.md",
+    "verification": "T-OPS-004"
+  },
+  {
+    "id": "R-OPS-005",
+    "area": "OPS",
+    "text": "AI calls must be focused and economical, and their cost must be auditable from the stored proposals alone.",
+    "spec_cite": "§15.5, §12.5",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/12-approval-and-versioning-workflow.md",
+    "verification": "T-OPS-005"
+  },
+  {
+    "id": "R-OPS-006",
+    "area": "OPS",
+    "text": "A critical validation error must block final approval.",
+    "spec_cite": "§15.5, §10.5",
+    "priority": "must",
+    "phase": 8,
+    "doc": "docs/12-approval-and-versioning-workflow.md",
+    "verification": "T-OPS-006"
+  },
+  {
+    "id": "R-OPS-007",
+    "area": "OPS",
+    "text": "Exported files must match the approved revision, or the export must be refused.",
+    "spec_cite": "§15.5",
+    "priority": "must",
+    "phase": 9,
+    "doc": "docs/12-approval-and-versioning-workflow.md",
+    "verification": "T-OPS-007"
+  },
+  {
+    "id": "R-OPS-008",
+    "area": "OPS",
+    "text": "Every export must carry a manifest recording engine version, Chromium build, font file hashes, theme token hash, imposition spec version and the revision triple.",
+    "spec_cite": "§15.5, D-14",
+    "priority": "must",
+    "phase": 9,
+    "doc": "docs/12-approval-and-versioning-workflow.md",
+    "verification": "T-OPS-008"
+  },
+  {
+    "id": "R-OPS-009",
+    "area": "OPS",
+    "text": "Every approved publication and its exported artifacts must be archived and retrievable.",
+    "spec_cite": "§13",
+    "priority": "must",
+    "phase": 9,
+    "doc": "docs/12-approval-and-versioning-workflow.md",
+    "verification": "T-OPS-009"
+  },
+  {
+    "id": "R-OPS-010",
+    "area": "OPS",
+    "text": "Each deliverable must be emitted as a standalone file or directory that the author owns.",
+    "spec_cite": "§13, D-19",
+    "priority": "must",
+    "phase": 9,
+    "doc": "docs/12-approval-and-versioning-workflow.md",
+    "verification": "T-OPS-105"
+  },
+  {
+    "id": "R-OPS-011",
+    "area": "OPS",
+    "text": "Error recovery must never leave a partial artifact that appears complete.",
+    "spec_cite": "§13, D-05",
+    "priority": "must",
+    "phase": 9,
+    "doc": "docs/12-approval-and-versioning-workflow.md",
+    "verification": "T-CMP-094"
+  },
+  {
+    "id": "R-OPS-012",
+    "area": "OPS",
+    "text": "An artifact whose manifest cannot be reproduced on the recorded environment must be reported as unreproducible rather than valid.",
+    "spec_cite": "§15.5, D-14",
+    "priority": "must",
+    "phase": 9,
+    "doc": "docs/12-approval-and-versioning-workflow.md",
+    "verification": "T-PRT-068"
+  },
+  {
+    "id": "R-OPS-013",
+    "area": "OPS",
+    "text": "A headless command-line interface must expose project, compose, validate and export operations without the user interface.",
+    "spec_cite": "§13, D-02",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/12-approval-and-versioning-workflow.md",
+    "verification": "T-OPS-106"
+  },
+  {
+    "id": "R-OPS-014",
+    "area": "OPS",
+    "text": "An export that cites an approval which is stale relative to the current revision pointers must be refused.",
+    "spec_cite": "§15.5",
+    "priority": "must",
+    "phase": 9,
+    "doc": "docs/12-approval-and-versioning-workflow.md",
+    "verification": "T-OPS-014"
+  },
+  {
+    "id": "R-ARC-101",
+    "area": "ARC",
+    "text": "The pagination and solve functions must be deterministic: identical revisions, target, engine version and pinned Chromium build must yield a byte-identical page plan.",
+    "spec_cite": "§12.4, D-04",
+    "priority": "must",
+    "phase": 2,
+    "doc": "docs/03-technical-architecture.md",
+    "verification": "T-ARC-101"
+  },
+  {
+    "id": "R-ARC-102",
+    "area": "ARC",
+    "text": "All solver measurements must be quantised to 1/64-pixel integers and all constraint weights must be integers, so no floating-point rounding can change a plan.",
+    "spec_cite": "D-04",
+    "priority": "must",
+    "phase": 2,
+    "doc": "docs/07-lock-and-constraint-rules.md",
+    "verification": "T-ARC-102"
+  },
+  {
+    "id": "R-ARC-103",
+    "area": "ARC",
+    "text": "Any collection whose order affects output must be iterated in ULID sort order, never in hash-map order.",
+    "spec_cite": "D-04",
+    "priority": "must",
+    "phase": 2,
+    "doc": "docs/03-technical-architecture.md",
+    "verification": "T-ARC-103"
+  },
+  {
+    "id": "R-ARC-104",
+    "area": "ARC",
+    "text": "Measuring one content block in Chromium must complete within 5 ms, and measuring a 10,000-word manuscript at a single viewport within 5 s, on the reference host.",
+    "spec_cite": "§12.5",
+    "priority": "must",
+    "phase": 2,
+    "doc": "docs/03-technical-architecture.md",
+    "verification": "T-ARC-104"
+  },
+  {
+    "id": "R-ARC-105",
+    "area": "ARC",
+    "text": "The initial composition solve for a manuscript of up to 400 blocks must complete within 500 ms.",
+    "spec_cite": "§12.5",
+    "priority": "must",
+    "phase": 2,
+    "doc": "docs/03-technical-architecture.md",
+    "verification": "T-ARC-105"
+  },
+  {
+    "id": "R-OPS-101",
+    "area": "OPS",
+    "text": "Every exported artifact must embed the environment manifest of engine version, Chromium build, font hashes, token hash, imposition spec version and revision triple.",
+    "spec_cite": "§15.5, D-14",
+    "priority": "must",
+    "phase": 9,
+    "doc": "docs/12-approval-and-versioning-workflow.md",
+    "verification": "T-OPS-101"
+  },
+  {
+    "id": "R-OPS-102",
+    "area": "OPS",
+    "text": "An export must be refused unless the cited approval is approved, its revisions equal the current pointers and its recorded environment equals the engine's actual environment.",
+    "spec_cite": "§15.5",
+    "priority": "must",
+    "phase": 9,
+    "doc": "docs/12-approval-and-versioning-workflow.md",
+    "verification": "T-OPS-102"
+  },
+  {
+    "id": "R-OPS-103",
+    "area": "OPS",
+    "text": "Re-running any AI or render job on unchanged inputs must perform zero billable provider calls.",
+    "spec_cite": "§12.5, §15.5",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/03-technical-architecture.md",
+    "verification": "T-OPS-103"
+  },
+  {
+    "id": "R-OPS-104",
+    "area": "OPS",
+    "text": "Every third-party asset actually used must be recorded in the project licence file, and a missing entry must raise an OPS_LICENSE_MISSING finding.",
+    "spec_cite": "§12.2, D-08",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/04-project-data-schema.md",
+    "verification": "T-OPS-104"
+  },
+  {
+    "id": "R-UXS-101",
+    "area": "UXS",
+    "text": "Any long-running operation must return a job identifier within 200 ms and must never hold an HTTP request open for the duration of a render.",
+    "spec_cite": "§12.5, D-17",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/06-composition-editor-ux.md",
+    "verification": "T-UXS-101"
+  },
+  {
+    "id": "R-DIG-101",
+    "area": "DIG",
+    "text": "The first reader page must become interactive within 2 s on the reference mid-range mobile device served from local files.",
+    "spec_cite": "§7.1",
+    "priority": "must",
+    "phase": 3,
+    "doc": "docs/08-pagination-strategy.md",
+    "verification": "T-DIG-101"
+  },
+  {
+    "id": "R-DIG-102",
+    "area": "DIG",
+    "text": "A page-turn transition must target 60 frames per second and must degrade to the instant transition when the device cannot sustain it.",
+    "spec_cite": "§7.2",
+    "priority": "must",
+    "phase": 3,
+    "doc": "docs/08-pagination-strategy.md",
+    "verification": "T-DIG-102"
+  },
+  {
+    "id": "R-PRT-101",
+    "area": "PRT",
+    "text": "Rendering one print page must complete within 2 s and producing a 16-page reading PDF within 30 s on the reference host.",
+    "spec_cite": "§9.3",
+    "priority": "must",
+    "phase": 6,
+    "doc": "docs/08-pagination-strategy.md",
+    "verification": "T-PRT-101"
+  },
+  {
+    "id": "R-UXS-102",
+    "area": "UXS",
+    "text": "Every animation must be honoured as non-essential, and the reader must supply a no-animation path when reduced motion is requested.",
+    "spec_cite": "§7.2",
+    "priority": "must",
+    "phase": 3,
+    "doc": "docs/06-composition-editor-ux.md",
+    "verification": "T-UXS-102"
+  },
+  {
+    "id": "R-UXS-103",
+    "area": "UXS",
+    "text": "Every editing operation, including moving content between pages, must be reachable without a pointer device.",
+    "spec_cite": "§6.4, §7.3",
+    "priority": "must",
+    "phase": 4,
+    "doc": "docs/06-composition-editor-ux.md",
+    "verification": "T-UXS-103"
+  },
+  {
+    "id": "R-UXS-104",
+    "area": "UXS",
+    "text": "Every shipped theme must meet WCAG 2.1 AA contrast, at least 4.5:1 for body text, on its page background.",
+    "spec_cite": "§8.3",
+    "priority": "must",
+    "phase": 5,
+    "doc": "docs/09-design-token-architecture.md",
+    "verification": "T-UXS-104"
+  },
+  {
+    "id": "R-DIG-103",
+    "area": "DIG",
+    "text": "Digital body text must never render below 16 px_css at scale 1.0 under any permitted reader override.",
+    "spec_cite": "§8.3, §7.3",
+    "priority": "must",
+    "phase": 3,
+    "doc": "docs/08-pagination-strategy.md",
+    "verification": "T-DIG-103"
+  },
+  {
+    "id": "R-PRT-102",
+    "area": "PRT",
+    "text": "Print body text must never render below the design revision's declared readable minimum of 12 pt.",
+    "spec_cite": "§8.3",
+    "priority": "must",
+    "phase": 6,
+    "doc": "docs/08-pagination-strategy.md",
+    "verification": "T-PRT-102"
+  },
+  {
+    "id": "R-DSN-101",
+    "area": "DSN",
+    "text": "Font selection must resolve to a licensing registry entry with a licence recorded, and a font without one must be unselectable.",
+    "spec_cite": "§8.3, D-09",
+    "priority": "must",
+    "phase": 5,
+    "doc": "docs/09-design-token-architecture.md",
+    "verification": "T-DSN-101"
+  },
+  {
+    "id": "R-DSN-102",
+    "area": "DSN",
+    "text": "A font used in a print design must declare PDF embedding permitted, and embedding failure must invalidate the PDF.",
+    "spec_cite": "§8.3, D-09",
+    "priority": "must",
+    "phase": 6,
+    "doc": "docs/09-design-token-architecture.md",
+    "verification": "T-DSN-102"
+  },
+  {
+    "id": "R-IDE-101",
+    "area": "IDE",
+    "text": "Importing scripture must require a licence entry for the chosen translation, and the import must be refused without one.",
+    "spec_cite": "§4.3, D-08",
+    "priority": "must",
+    "phase": 1,
+    "doc": "docs/04-project-data-schema.md",
+    "verification": "T-IDE-101"
+  }
+]
